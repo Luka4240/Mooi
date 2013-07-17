@@ -1,0 +1,74 @@
+.mooi-table {
+    /* Remove spacing between table cells (from Normalize.css) */
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+}
+
+.mooi-table caption {
+    color: #000;
+    font: italic 85%/1 arial, sans-serif;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.mooi-table td,
+.mooi-table th {
+    border-left: 1px solid #cbcbcb;/*  inner column border */
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible; /*to make ths where the title is really long work*/
+    padding: 6px 12px; /* cell padding */
+}
+.mooi-table td:first-child,
+.mooi-table th:first-child {
+    border-left-width: 0;
+}
+
+.mooi-table thead {
+    background: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+/*
+striping:
+   even - #fff (white)
+   odd  - #f2f2f2 (light gray)
+*/
+.mooi-table td {
+    background-color: transparent;
+}
+.mooi-table-odd td {
+    background-color: #f2f2f2;
+}
+
+/* nth-child selector for modern browsers */
+.mooi-table-striped tr:nth-child(2n-1) td {
+    background-color: #f2f2f2;
+}
+
+/* BORDERED TABLES */
+.mooi-table-bordered td {
+    border-bottom: 1px solid #cbcbcb;
+}
+.mooi-table-bordered tbody > tr:last-child td,
+.mooi-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+
+/* HORIZONTAL BORDERED TABLES */
+
+.mooi-table-horizontal td,
+.mooi-table-horizontal th {
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid #cbcbcb;
+}
+.mooi-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
