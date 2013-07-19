@@ -1,0 +1,34 @@
+.mooi-menu-right { float:right; }
+.mooi-menu-left { float:left; }
+
+.mooi-menu-right ul li, .mooi-menu-left ul li {
+	display:inline-block;
+	@include rem('padding',5px);
+	@include rem('margin',1px);
+}
+
+.mooi-menu-right ul li a, .mooi-menu-left ul li a {
+	@include rem('padding',7px 20px 7px 20px);	
+	@include border-radius(4px);
+}
+
+.mooi-menu-right ul li a:link, .mooi-menu-left ul li a:link{
+	color:#888;
+	text-decoration:none;
+}
+.mooi-menu-right ul li a:active, .mooi-menu-left ul li a:active {
+	color:#111;
+	text-decoration:none;
+}
+.mooi-menu-right ul li a:hover, .mooi-menu-left ul li a:hover {
+	color:#222;
+	background-color:#eee;
+	
+}
+.mooi-menu ul-right li a:focus, .mooi-menu ul-left li a:focus {
+	color:#222;
+}
+
+.mooi-menu ul-right li:focus, .mooi-menu ul-left li:focus  {
+	background-color:#ccc;
+}

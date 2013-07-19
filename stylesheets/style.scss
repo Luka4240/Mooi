@@ -1,34 +1,45 @@
-// @import "../sass/_reset.scss";
-@import "../sass/_mixinlib.scss";
-@import "../sass/_layout.scss";
+/* CSS Document */
+@import "../sass/_reset.scss"; 		// /* Do Not Remove */
+@import "_vars.scss";				// /* Do Not Remove */
+@import "../sass/_mixinlib.scss"; 	// /* Do Not Remove */
+@import "../sass/_layout.scss"; 	// /* Do Not Remove */
+@import "../sass/_images.scss";
 @import "../sass/_forms.scss";
 @import "../sass/_buttons.scss";
 @import "../sass/_tables.scss";
 @import "../sass/_typography.scss";
+@import "../sass/_menus.scss";
 
 
 .example-col {
 	background-color:#CCC;
 	@include border-radius(3px);
 	text-align:center;
-	padding:8px 0;
-	margin:2px 0;
+	padding:0.5rem 0;
+	margin:0.25rem 0;
 }
-
 .logo {
+	float:left;
 	width:100%;
-	max-width:300px;
+	max-width:168px;
 	height:auto; }
 .mooi-header {
-	padding:10px 0;
-	border-bottom:1px solid #111; }
-	
-html {
-	font-size:16px; }
-body {
-	font-family: 'Roboto', sans-serif;	
+	@include rem('padding',5px 0 15px 0);
+	border-bottom:1px solid #111;
+	background-color:#fff; 
 }
-	
-h1 {font-size: 2.625rem; }
-h2 {font-size: 2.2rem;}	
-h3 {font-size: 2rem; }
+.big-intro {
+	@include fontSize(110px);
+	@include rem('line-height',140px);
+	@include rem('margin',150px 0 0 0);
+	@include rem('padding',0 0 150px 0);
+	border-bottom:1px solid #111;
+}
+.intro {
+	@include fontSize(20px);
+	@include rem('margin',30px 0);
+}
+.scroll {max-width:300px;display:block;margin-right:auto;margin-left:auto;@include rem('margin-bottom',10px);}
+
+
+

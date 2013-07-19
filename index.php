@@ -5,38 +5,62 @@
 <title>Mooi | A Beautifully Clean and Simple SCSS Framework</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href='http://fonts.googleapis.com/css?family=Arimo|Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/lukehoward.me.uk/35410.css" type="text/css" />
+<link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/www.lukehoward.me.uk/35410.css" type="text/css" />
 <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
-<header class="row mooi-header">
-	<div class="five columns">
-		<img src="images/mooi_logo.png" alt="Mooi" width="300" height="114" class="logo" />
-	</div>
-    <div class="eleven columns">
-    <p>A Beautifully Clean and Simple SCSS Framework.</p>
+
+<!-- Page Header -->
+
+<header class="row">
+	<div class="sixteen columns mooi-header">
+    <img class="logo" src="images/mooi_logo_sml.png" width="168" height="60" alt="Mooi">
+	<nav class="mooi-menu-right add-top-space">
+    	<ul>
+        	<li><a href="http://www.lukehoward.me.uk/mooi/">Home</a></li>
+            <li><a href="http://www.lukehoward.me.uk/mooi/documentation">Documentation</a></li>
+            <li><a href="http://www.lukehoward.me.uk/mooi/mixins">Mixins</a></li>
+            <li><a href="http://www.lukehoward.me.uk/mooi/license">License</a></li>
+            <li><a href="http://www.lukehoward.me.uk/mooi/contact">Contact</a></li>
+		</ul>
+	</nav>        	          
     </div>
 </header>    
 
 <div class="row">
 	<div class="sixteen columns">
-    	<p>Mooi is a collection of SCSS files that will allow you to develop a website that will look great no matter what the screen size. It was built to speed up the development of any website, be it a wireframe site, or a fully function corporate site.</p>
-    	<p>Mooi was designed and created by Luke Howard and Chris Brett, by using a collection of experience and tools available to them.</p>
-    </div>
+    	<p class="big-intro">A Beautifully Clean and Simple SCSS Framework</p>
+	</div>        
 </div>
 
+<div class="row">
+	<div class="sixteen columns">
+    	<p class="intro">Mooi is a SCSS Framework designed to speed up development times, with Mooi you can wireframe a site in a matter of minutes by setting a few variables and then adding your own CSS to the StyleSheets.</p>
+        <p class="intro">Mooi has been designed, developed and created with users in mind, the concept is that nothing should be overly complicated and that by using this framework it will reduce the lines of code that you have to write, and let Mooi do the rest for you.</p>
+    </div>
+</div>
+<div class="row">
+	<div class="sixteen columns">
+    	<img class="image-center  scroll" src="images/scrolldown.png" width="300px" height="83">
+	</div>
+</div>            
 
 
+<div class="row">
+	<div class="sixteen columns">
+    	<input type="button" class="mooi-button mooi-button-primary" value="Button" />
+    </div>
+</div>    
 
 
 <div class="row">
 	<div class="sixteen columns">
     	<h3>The Grid</h3>
-		<p>Our Grid system is based on the 960 grid system except it is varied to run on higher resolutions.
+		<p>Our Grid system is based on the <a href="#">960 grid system </a>except it is varied to run on higher resolutions.
     </div>
-    
     
   <div class="one columns example-col">One</div>
   <div class="fifteen columns example-col">Fifteen</div>
@@ -85,9 +109,26 @@
     
   <div class="sixteen columns example-col">Sixteen</div>
     
+    <div class="one-third column example-col">One Third</div>
+    <div class="one-third column example-col">One Third</div>
+    <div class="one-third column example-col">One Third</div>
     
+    <div class="two-thirds column example-col">Two Thirds</div>
+    <div class="one-third column example-col">One Third</div>
 </div>
 
+
+<footer class="row">
+    <div class="one-third column">
+    	<p>&copy; Copyright 2013. Luke Howard. All Rights Reserved.</p>
+    </div>
+    <div class="one-third column">
+    
+    </div>
+    <div class="one-third column">
+    
+    </div>
+</footer>
 
 </body>
 </html>

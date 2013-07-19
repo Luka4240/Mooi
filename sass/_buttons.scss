@@ -1,5 +1,7 @@
 .mooi-button,
 .mooi-button:visited {
+	
+	
     font-size: 100%;
     *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
     *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
@@ -11,7 +13,9 @@
     border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
     background-color: #E6E6E6;
     text-decoration: none;
-    border-radius: 2px;
+	
+	@include border-radius(2px);
+	
     -webkit-font-smoothing: antialiased;
     /* Transitions */
     -webkit-transition: 0.1s linear -webkit-box-shadow;
@@ -73,3 +77,68 @@ a.mooi-button-selected {
     background-color: rgb(0, 120, 231);
     color: #fff;
 }
+
+.mooi-button-success,
+        .mooi-button-error,
+        .mooi-button-warning,
+        .mooi-button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .mooi-button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+
+        .mooi-button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+
+        .mooi-button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+        }
+
+        .mooi-button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
+
+
+
+
+
+.mooi-button-xsmall {
+	font-size:0.7rem;
+}
+.mooi-button-small {
+	font-size: 0.85rem;
+}
+.mooi-button-large {
+	font-size: 1.1rem;
+}
+.mooi-button-xlarge {
+	font-size: 1.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
