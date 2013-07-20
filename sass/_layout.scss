@@ -97,7 +97,7 @@
     @media only screen and (max-width: 767px) {
         .row { width: 92%; }
         .row .columns,
-        .row .column { margin: 0; }
+        .row .column {/* margin: 0; */}
 
         .row .one.column,
         .row .one.columns,
@@ -147,7 +147,7 @@
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         .row { width: 92%; min-width:310px; }
         .row .columns,
-        .row .column { margin: 0; }
+        .row .column { /* margin:0; */ }
 
         .row .one.column,
         .row .one.columns,

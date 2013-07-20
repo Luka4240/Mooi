@@ -1,5 +1,9 @@
-.mooi-menu-right { float:right; }
-.mooi-menu-left { float:left; }
+.mooi-menu-right { 
+	float:right;
+	@include rem('margin',6px 0); }
+.mooi-menu-left { 
+	float:left;
+	@include rem('margin',6px 0); }
 
 .mooi-menu-right ul li, .mooi-menu-left ul li {
 	display:inline-block;

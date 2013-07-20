@@ -22,7 +22,6 @@
     	<ul>
         	<li><a href="http://www.lukehoward.me.uk/mooi/">Home</a></li>
             <li><a href="http://www.lukehoward.me.uk/mooi/documentation">Documentation</a></li>
-            <li><a href="http://www.lukehoward.me.uk/mooi/mixins">Mixins</a></li>
             <li><a href="http://www.lukehoward.me.uk/mooi/license">License</a></li>
             <li><a href="http://www.lukehoward.me.uk/mooi/contact">Contact</a></li>
 		</ul>
