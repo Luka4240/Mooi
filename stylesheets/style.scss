@@ -18,6 +18,9 @@
 	@include rem('padding',4px 0);
 	@include rem('margin',4px 0);
 }
+
+.element {padding:20px; }
+
 .logo {
 	float:left;
 	width:100%;

@@ -52,7 +52,6 @@
 	<div class="sixteen columns">
     	<input type="button" class="mooi-button" value="Button" />
         <input type="button" class="mooi-button mooi-button-disabled" value="Button" />
-        <input type="button" class="mooi-button mooi-button-hover" value="Button" />
         <input type="button" class="mooi-button mooi-button-primary" value="Button" />
         <input type="button" class="mooi-button mooi-button-success" value="Button" />
         <input type="button" class="mooi-button mooi-button-error" value="Button" />
