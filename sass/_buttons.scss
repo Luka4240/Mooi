@@ -59,12 +59,15 @@ a.mooi-button:hover, a.mooi-button:focus, .mooi-button:hover, .mooi-button:focus
 }
 
 .mooi-button-primary, .mooi-button-primary:visited,.mooi-button-primary:active, a.mooi-button-primary, a.mooi-button-primary:visited, a.mooi-button-primary:active {
-    background-color:#0064FF;
+    background-color:#C814FA;
     color: #fff;
+}
+.mooi-button-primary:hover, a.mooi-button-primary:hover, .mooi-button-primary:focus, a.mooi-button-primary:focus {
+	color: #fff;
 }
 
 .mooi-button-red, .mooi-button-orange, .mooi-button-green, .mooi-button-blue, a.mooi-button-red, a.mooi-button-orange, a.mooi-button-green, a.mooi-button-blue, .mooi-button-red:active, .mooi-button-orange:active, .mooi-button-green:active, .mooi-button-blue:active, a.mooi-button-red:active, a.mooi-button-orange:active, a.mooi-button-green:active, a.mooi-button-blue:active, .mooi-button-red:visited, .mooi-button-orange:visited, .mooi-button-green:visited, .mooi-button-blue:visited, a.mooi-button-red:visited, a.mooi-button-orange:visited, a.mooi-button-green:visited, a.mooi-button-blue:visited {
-	color: white;
+	color: #fff;;
 	border-radius: 4px;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -85,6 +88,15 @@ a.mooi-button:hover, a.mooi-button:focus, .mooi-button:hover, .mooi-button:focus
 	background:#32A0C8;
 }
 
+.mooi-button-red:hover, .mooi-button-orange:hover, .mooi-button-green:hover, .mooi-button-blue:hover, 
+a.mooi-button-red:hover, a.mooi-button-orange:hover, a.mooi-button-green:hover, a.mooi-button-blue:hover,
+.mooi-button-red:focus, .mooi-button-orange:focus, .mooi-button-green:focus, .mooi-button-blue:focus, 
+a.mooi-button-red:focus, a.mooi-button-orange:focus, a.mooi-button-green:focus, a.mooi-button-blue:focus {
+	color: #fff;;
+}
+
+
+
 .mooi-button-xsmall, a.mooi-button-xsmall {
 	font-size:0.7rem;
 }
@@ -97,26 +109,3 @@ a.mooi-button:hover, a.mooi-button:focus, .mooi-button:hover, .mooi-button:focus
 .mooi-button-xlarge, a.mooi-button-xlarge {
 	font-size: 1.25rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

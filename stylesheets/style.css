@@ -61,12 +61,6 @@ audio:not([controls]) {
 }
 
 /* ====  Typography  ==== */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Address variable `h1` font-size and margin within `section` and `article` contexts in Firefox 4+, Safari 5, and Chrome. */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -648,43 +642,43 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 50px;
   font-size: 3.125rem;
-  padding: 15px 0;
-  padding:  0.9375rem 0;
+  padding: 15px 0 25px 0;
+  padding:  0.9375rem 0 1.5625rem 0;
 }
 
 h2 {
   font-size: 44px;
   font-size: 2.75rem;
-  padding: 15px 0;
-  padding:  0.9375rem 0;
+  padding: 15px 0 25px 0;
+  padding:  0.9375rem 0 1.5625rem 0;
 }
 
 h3 {
   font-size: 38px;
   font-size: 2.375rem;
-  padding: 12px 0;
-  padding:  0.75rem 0;
+  padding: 12px 0 20px 0;
+  padding:  0.75rem 0 1.25rem 0;
 }
 
 h4 {
   font-size: 32px;
   font-size: 2rem;
-  padding: 10px 0;
-  padding:  0.625rem 0;
+  padding: 10px 0 18px 0;
+  padding:  0.625rem 0 1.125rem 0;
 }
 
 h5 {
   font-size: 26px;
   font-size: 1.625rem;
-  padding: 8px 0;
-  padding:  0.5rem 0;
+  padding: 8px 0 15px 0;
+  padding:  0.5rem 0 0.9375rem 0;
 }
 
 h6 {
   font-size: 20px;
   font-size: 1.25rem;
-  padding: 8px 0;
-  padding:  0.5rem 0;
+  padding: 8px 0 14px 0;
+  padding:  0.5rem 0 0.875rem 0;
 }
 
 p {
@@ -701,6 +695,25 @@ a:link, a:active, a:visited {
 a:hover {
   text-decoration: underline;
   color: blue;
+}
+
+blockquote {
+  font-size: 16px;
+  font-style: italic;
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+  padding: 10px 0px 10px 10px;
+  padding:  0.625rem 0px 0.625rem 0.625rem;
+  border-left: 1px solid #ddd;
+  background-color: #eee;
+  text-indent: 20px;
+  text-indent: 1.25rem;
+}
+
+q {
+  text-indent: 10px;
+  text-indent: 0.625rem;
+  font-style: italic;
 }
 
 .image-center {
@@ -753,6 +766,8 @@ textarea {
   -moz-background-clip: padding;
   background-clip: padding-box;
   outline: none;
+  width: 250px;
+  width: 15.625rem;
 }
 
 input[type="text"]:focus,
@@ -845,12 +860,16 @@ a.mooi-button:hover, a.mooi-button:focus, .mooi-button:hover, .mooi-button:focus
 }
 
 .mooi-button-primary, .mooi-button-primary:visited, .mooi-button-primary:active, a.mooi-button-primary, a.mooi-button-primary:visited, a.mooi-button-primary:active {
-  background-color: #0064FF;
+  background-color: #C814FA;
+  color: #fff;
+}
+
+.mooi-button-primary:hover, a.mooi-button-primary:hover, .mooi-button-primary:focus, a.mooi-button-primary:focus {
   color: #fff;
 }
 
 .mooi-button-red, .mooi-button-orange, .mooi-button-green, .mooi-button-blue, a.mooi-button-red, a.mooi-button-orange, a.mooi-button-green, a.mooi-button-blue, .mooi-button-red:active, .mooi-button-orange:active, .mooi-button-green:active, .mooi-button-blue:active, a.mooi-button-red:active, a.mooi-button-orange:active, a.mooi-button-green:active, a.mooi-button-blue:active, .mooi-button-red:visited, .mooi-button-orange:visited, .mooi-button-green:visited, .mooi-button-blue:visited, a.mooi-button-red:visited, a.mooi-button-orange:visited, a.mooi-button-green:visited, a.mooi-button-blue:visited {
-  color: white;
+  color: #fff;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -869,6 +888,13 @@ a.mooi-button:hover, a.mooi-button:focus, .mooi-button:hover, .mooi-button:focus
 
 .mooi-button-blue, a.mooi-button-blue, a.mooi-button-blue:active, a.mooi-button-blue:visited {
   background: #32A0C8;
+}
+
+.mooi-button-red:hover, .mooi-button-orange:hover, .mooi-button-green:hover, .mooi-button-blue:hover,
+a.mooi-button-red:hover, a.mooi-button-orange:hover, a.mooi-button-green:hover, a.mooi-button-blue:hover,
+.mooi-button-red:focus, .mooi-button-orange:focus, .mooi-button-green:focus, .mooi-button-blue:focus,
+a.mooi-button-red:focus, a.mooi-button-orange:focus, a.mooi-button-green:focus, a.mooi-button-blue:focus {
+  color: #fff;
 }
 
 .mooi-button-xsmall, a.mooi-button-xsmall {

@@ -15,20 +15,34 @@ h1, h2, h3, h4, h5, h6 {
 	font-style:normal; }
 	
 h1 {@include fontSize($h1Size);
-	@include rem('padding',15px 0); }
+	@include rem('padding',15px 0 25px 0); }
 h2 {@include fontSize($h2Size);
-	@include rem('padding',15px 0); }	
+	@include rem('padding',15px 0 25px 0); }	
 h3 {@include fontSize($h3Size);
-	@include rem('padding',12px 0); }	
+	@include rem('padding',12px 0 20px 0); }	
 h4 {@include fontSize($h4Size);
-	@include rem('padding',10px 0); }	
+	@include rem('padding',10px 0 18px 0); }	
 h5 {@include fontSize($h5Size);
-	@include rem('padding',8px 0); }	
+	@include rem('padding',8px 0 15px 0); }	
 h6 {@include fontSize($h6Size);
-	@include rem('padding',8px 0); }	
+	@include rem('padding',8px 0 14px 0); }	
 
 p {font-size:$default-fontSize;
 	@include rem('padding', 5px 0); }
 	
 a:link, a:active, a:visited { text-decoration:none;color:$linkColor;}
 a:hover {text-decoration:underline; color:$linkHover;}	
+
+blockquote {
+	font-size:$default-fontSize;
+	font-style: italic;
+	@include rem('margin-left',15px);
+	@include rem('padding',10px 0px 10px 10px);
+	border-left:1px solid #ddd;
+	background-color:#eee;
+	@include rem('text-indent',20px);
+}
+q {
+	@include rem('text-indent',10px);
+	font-style:italic;
+}
