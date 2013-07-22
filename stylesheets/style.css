@@ -626,6 +626,83 @@ or wrap each row of columns in a <div class="row"> */
   height: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Museo Sans Rounded 300", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size-adjust: 0.5;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5rem;
+  color: #111111;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Museo Sans Rounded 300", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 50px;
+  font-size: 3.125rem;
+  padding: 15px 0;
+  padding:  0.9375rem 0;
+}
+
+h2 {
+  font-size: 44px;
+  font-size: 2.75rem;
+  padding: 15px 0;
+  padding:  0.9375rem 0;
+}
+
+h3 {
+  font-size: 38px;
+  font-size: 2.375rem;
+  padding: 12px 0;
+  padding:  0.75rem 0;
+}
+
+h4 {
+  font-size: 32px;
+  font-size: 2rem;
+  padding: 10px 0;
+  padding:  0.625rem 0;
+}
+
+h5 {
+  font-size: 26px;
+  font-size: 1.625rem;
+  padding: 8px 0;
+  padding:  0.5rem 0;
+}
+
+h6 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding: 8px 0;
+  padding:  0.5rem 0;
+}
+
+p {
+  font-size: 16px;
+  padding: 5px 0;
+  padding:  0.3125rem 0;
+}
+
+a:link, a:active, a:visited {
+  text-decoration: none;
+  color: #111111;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
 .image-center {
   margin-right: auto;
   margin-left: auto;
@@ -696,7 +773,7 @@ textarea:focus {
   box-shadow: 0 0 4px rgba(81, 167, 232, 0.35), 0 1px 2px rgba(0, 0, 0, 0.075) inset;
 }
 
-.mooi-button, .mooi-button:visited {
+.mooi-button, .mooi-button:visited, a.mooi-button {
   font-size: 16px;
   *font-size: 90%;
   /* IE fix */
@@ -704,15 +781,19 @@ textarea:focus {
   /*IE Fix */
   padding: 8px 24px 8px 24px;
   padding:  0.5rem 1.5rem 0.5rem 1.5rem;
+  margin-top: 2px;
+  margin-top: 0.125rem;
+  margin-bottom: 2px;
+  margin-bottom: 0.125rem;
   color: #222;
   color: rgba(0, 0, 0, 0.7);
   border: 1px solid #999;
   border: none rgba(0, 0, 0, 0);
   background-color: #E6E6E6;
   text-decoration: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
@@ -725,9 +806,9 @@ textarea:focus {
   transition: 0.1s linear box-shadow;
 }
 
-.mooi-button-hover,
-.mooi-button:hover,
-.mooi-button:focus {
+a.mooi-button:hover, a.mooi-button:focus, .mooi-button:hover, .mooi-button:focus {
+  text-decoration: none;
+  color: #222;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
   background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
@@ -741,16 +822,7 @@ textarea:focus {
   outline: 0;
 }
 
-.mooi-button-active,
-.mooi-button:active {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
-}
-
-.mooi-button[disabled],
-.mooi-button-disabled,
-.mooi-button-disabled:hover,
-.mooi-button-disabled:focus,
-.mooi-button-disabled:active {
+.mooi-button[disabled], .mooi-button-disabled, .mooi-button-disabled:hover, .mooi-button-disabled:focus, .mooi-button-disabled:active, a.mooi-button[disabled], a.mooi-button-disabled, a.mooi-button-disabled:hover, a.mooi-button-disabled:focus, a.mooi-button-disabled:active {
   border: none;
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -772,56 +844,46 @@ textarea:focus {
   border: 0;
 }
 
-.mooi-button-primary,
-.mooi-button-selected,
-a.mooi-button-primary,
-a.mooi-button-selected {
-  background-color: #0078e7;
+.mooi-button-primary, .mooi-button-primary:visited, .mooi-button-primary:active, a.mooi-button-primary, a.mooi-button-primary:visited, a.mooi-button-primary:active {
+  background-color: #0064FF;
   color: #fff;
 }
 
-.mooi-button-success,
-.mooi-button-error,
-.mooi-button-warning,
-.mooi-button-secondary {
+.mooi-button-red, .mooi-button-orange, .mooi-button-green, .mooi-button-blue, a.mooi-button-red, a.mooi-button-orange, a.mooi-button-green, a.mooi-button-blue, .mooi-button-red:active, .mooi-button-orange:active, .mooi-button-green:active, .mooi-button-blue:active, a.mooi-button-red:active, a.mooi-button-orange:active, a.mooi-button-green:active, a.mooi-button-blue:active, .mooi-button-red:visited, .mooi-button-orange:visited, .mooi-button-green:visited, .mooi-button-blue:visited, a.mooi-button-red:visited, a.mooi-button-orange:visited, a.mooi-button-green:visited, a.mooi-button-blue:visited {
   color: white;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.mooi-button-success {
-  background: #1cb841;
-  /* this is a green */
+.mooi-button-green, a.mooi-button-green, a.mooi-button-green:active, a.mooi-button-green:visited {
+  background: #0CAA1E;
 }
 
-.mooi-button-error {
-  background: #ca3c3c;
-  /* this is a maroon */
+.mooi-button-red, a.mooi-button-red, a.mooi-button-red:active, a.mooi-button-red:visited {
+  background: #DC2828;
 }
 
-.mooi-button-warning {
-  background: #df7514;
-  /* this is an orange */
+.mooi-button-orange, a.mooi-button-orange, a.mooi-button-orange:active, a.mooi-button-orange:visited {
+  background: #FF8200;
 }
 
-.mooi-button-secondary {
-  background: #42b8dd;
-  /* this is a light blue */
+.mooi-button-blue, a.mooi-button-blue, a.mooi-button-blue:active, a.mooi-button-blue:visited {
+  background: #32A0C8;
 }
 
-.mooi-button-xsmall {
+.mooi-button-xsmall, a.mooi-button-xsmall {
   font-size: 0.7rem;
 }
 
-.mooi-button-small {
+.mooi-button-small, a.mooi-button-small {
   font-size: 0.85rem;
 }
 
-.mooi-button-large {
+.mooi-button-large, a.mooi-button-large {
   font-size: 1.1rem;
 }
 
-.mooi-button-xlarge {
+.mooi-button-xlarge, a.mooi-button-xlarge {
   font-size: 1.25rem;
 }
 
@@ -904,83 +966,6 @@ striping:
   border-bottom-width: 0;
 }
 
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: "Museo Sans Rounded 300", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size-adjust: 0.5;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.5rem;
-  color: #111111;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Museo Sans Rounded 300", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
-
-h1 {
-  font-size: 50px;
-  font-size: 3.125rem;
-  padding: 15px 0;
-  padding:  0.9375rem 0;
-}
-
-h2 {
-  font-size: 44px;
-  font-size: 2.75rem;
-  padding: 15px 0;
-  padding:  0.9375rem 0;
-}
-
-h3 {
-  font-size: 38px;
-  font-size: 2.375rem;
-  padding: 12px 0;
-  padding:  0.75rem 0;
-}
-
-h4 {
-  font-size: 32px;
-  font-size: 2rem;
-  padding: 10px 0;
-  padding:  0.625rem 0;
-}
-
-h5 {
-  font-size: 26px;
-  font-size: 1.625rem;
-  padding: 8px 0;
-  padding:  0.5rem 0;
-}
-
-h6 {
-  font-size: 20px;
-  font-size: 1.25rem;
-  padding: 8px 0;
-  padding:  0.5rem 0;
-}
-
-p {
-  font-size: 16px;
-  padding: 5px 0;
-  padding:  0.3125rem 0;
-}
-
-a:link, a:active, a:visited {
-  text-decoration: none;
-  color: #111111;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: blue;
-}
-
 .mooi-menu-right {
   float: right;
   margin: 6px 0;
@@ -1033,6 +1018,30 @@ a:hover {
 
 .mooi-menu ul-right li:focus, .mooi-menu ul-left li:focus {
   background-color: #ccc;
+}
+
+.code {
+  background-color: #efefef;
+  color: #111;
+  border: 1px solid #dfdfdf;
+  padding: 15px 15px 15px 15px;
+  padding:  0.9375rem 0.9375rem 0.9375rem 0.9375rem;
+  margin: 20px 10px 20px 10px;
+  margin:  1.25rem 0.625rem 1.25rem 0.625rem;
+  width: 75%;
+  min-width: 260px;
+  min-width: 16.25rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.section {
+  border-bottom: 1px solid #111;
+  margin-top: 15px;
+  margin-top: 0.9375rem;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  padding: 0 0 15px 0;
+  padding:  0 0 0.9375rem 0;
 }
 
 .example-col {

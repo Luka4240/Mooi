@@ -3,13 +3,30 @@
 @import "_vars.scss";				// /* Do Not Remove */
 @import "../sass/_mixinlib.scss"; 	// /* Do Not Remove */
 @import "../sass/_layout.scss"; 	// /* Do Not Remove */
+@import "../sass/_typography.scss";
 @import "../sass/_images.scss";
 @import "../sass/_forms.scss";
 @import "../sass/_buttons.scss";
 @import "../sass/_tables.scss";
-@import "../sass/_typography.scss";
 @import "../sass/_menus.scss";
 
+.code {
+	background-color: #efefef;
+	color:#111;
+	border:1px solid #dfdfdf;
+	@include rem('padding', 15px 15px 15px 15px);
+	@include rem('margin', 20px 10px 20px 10px);
+	width:75%;
+	@include rem('min-width',260px);
+	font-family:"Courier New", Courier, monospace;
+	
+}
+.section {
+	border-bottom:1px solid #111;
+	@include rem('margin-top',15px);
+	@include rem('margin-bottom',20px);
+	@include rem('padding',0 0 15px 0);
+}
 
 .example-col {
 	background-color:#CCC;
