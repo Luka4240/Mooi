@@ -241,23 +241,25 @@
         
         <p></p>
         <label>Regular Input</label>
-        <input type="text" />
+        <input class="mooi-input" type="text" /> <br/>
+        
     	<label>Regular Textarea</label>
-    	<textarea></textarea>
+    	<textarea class="mooi-input" ></textarea> <br/>
+        
         <label>Select List</label>
-        <select>
+        <select class="mooi-input" >
         	<option value="Option 1">Option 1</option>
             <option value="Option 2">Option 2</option>
             <option value="Option 3">Option 3</option>
-		</select>            
+		</select> <br/>
         
         <label>Regular Checkbox</label>
-        <input type="checkbox" />
-        <input type="checkbox" checked />
+        <input type="checkbox" /><br/>
+        <input type="checkbox" checked /><br/>
         <label>Regular Radio Button</label>
-        <input type="radio" />
-        <input type="radio" checked />
-        <label>Regular Button</label>
+        <input type="radio" /><br/>
+        <input type="radio" checked /><br/>
+        <label>Regular Button</label><br/>
         <input type="button" class="mooi-button" value="Submit" />
     </div>
 </div>

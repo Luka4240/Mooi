@@ -17,7 +17,10 @@ $body-font: "Museo Sans Rounded 300", Arial, 'Helvetica Neue', Helvetica, sans-s
 $header-font: "Museo Sans Rounded 300", Arial, 'Helvetica Neue', Helvetica, sans-serif ;
 
 $fontColor: #111 ;
-$linkColor: #111 ;
+$linkColor: #333 ;
 $linkHover: #00F ;
 
-$input-width: 250px;
+$input-width: 300px;
+$label-width: 120px;
+$label-above: true!default; /* This can only be true or false */
+

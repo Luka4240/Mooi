@@ -1,11 +1,13 @@
 @import "../sass/_mixinlib.scss";
 
 /* ==== FORMS ==== */
-
-/* We force the label element to display in block and give the labels the hand icon when hovered over. */
-
 label{
- display: block;
+ @if $label-above == true {
+	display:block;
+	}
+	@else if $label-above == false {
+		display:inline-block;
+	}
  cursor: pointer;
  font-weight: bold;
  margin-bottom: 0.3em;
@@ -27,22 +29,25 @@ input[type="time"],
 input[type="url"], 
 textarea {
 	outline: none;
-	font-size: 0.875em;
-	color: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	display: block;
-	margin: 0 0 1em;
-	padding: 0.5em;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	background-color: rgba(255, 255, 255, 1);
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset;
+	@if $label-above == true {
+	display:block;
+	}
+	@else if $label-above == false {
+		display:inline-block;
+	}
+	@inclue rem('font-size',14px);
+	color: #888;
+	width:100%;
+	@include rem('margin-bottom',16px);
+	@include rem('padding',8px);
+	border: 1px solid #dedede;
+	background-color: #fff;
+	box-shadow: 0 1px 2px #eee inset;
 	transition:    all 0.25s ease-in-out;
 	-webkit-transition:  all 0.25s ease-in-out;
 	-moz-transition:   all 0.25s ease-in-out;
-	
 	@include border-radius(3px);
 	outline: none;
-	@include rem('width',$input-width);
 }
 input[type="text"]:focus, 
 input[type="password"]:focus, 
@@ -58,6 +63,43 @@ input[type="tel"]:focus,
 input[type="time"]:focus, 
 input[type="url"]:focus, 
 textarea:focus{
-	border: 1px solid rgba(81, 167, 232, 1);
-	box-shadow: 0 0 4px rgba(81, 167, 232, 0.35), 
-				0 1px 2px rgba(0, 0, 0, 0.075) inset; }
+	border: 1px solid #51a7e8;
+	box-shadow: 0 0 4px #51afff, 
+				0 1px 2px #eee inset; }
+
+.mooi-label {
+	width:$label-width;
+}
+.mooi-input {
+	
+	@if $input-width == 0 {
+		width:100%;
+	}
+	@else {width:$input-width;}
+	
+	outline: none;
+	@if $label-above == true {
+	display:block;
+	}
+	@else if $label-above == false {
+		display:inline-block;
+	}
+	@inclue rem('font-size',14px);
+	color: #888;
+	@include rem('margin-bottom',16px);
+	@include rem('padding',8px);
+	border: 1px solid #dedede;
+	background-color: #fff;
+	box-shadow: 0 1px 2px #eee inset;
+	transition:    all 0.25s ease-in-out;
+	-webkit-transition:  all 0.25s ease-in-out;
+	-moz-transition:   all 0.25s ease-in-out;
+	@include border-radius(3px);
+	outline: none;
+	
+}
+.mooi-input:focus {
+	border: 1px solid #51a7e8;
+	box-shadow: 0 0 4px #51afff, 
+				0 1px 2px #eee inset;
+}
