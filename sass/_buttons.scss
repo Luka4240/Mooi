@@ -1,6 +1,6 @@
 // /* ---- Buttons for Mooi ---- */
 
-.mooi-button, .mooi-button:visited, a.mooi-button {
+.mooi-button, .mooi-button:visited, a.mooi-button, a.mooi-button:visited {
 	font-size: $default-fontSize;
 	*font-size:90%; /* IE fix */
 	*overflow: visible; /*IE Fix */
