@@ -367,6 +367,7 @@
 		&lt;/table&gt;
 	</p>
     
+    <h5>Responsive Table</h5>
     
     <table class="mooi-table mooi-responsive-table">
     	<tr><th>User ID</th><th>First Name</th><th>Last Name</th><th>Department</th><th>Start Year</th></tr>
@@ -377,6 +378,19 @@
         <tr><td data-value="User ID">5</td><td data-value="First Name">Jimmy</td><td data-value="Last Name">Brown</td><td data-value="Department">Sales</td><td data-value="Start Year">2003</td></tr>
         <tr><td data-value="User ID">6</td><td data-value="First Name">Jenny</td><td data-value="Last Name">Wilson</td><td data-value="Department">IT</td><td data-value="Start Year">2011</td></tr>
 	</table>        
+    
+    <p class="code">
+    	&lt;table class="mooi-table mooi-responsive-table"&gt;<br/>
+            &lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt;&lt;th&gt;First Name&lt;/th&gt;&lt;th&gt;Last Name&lt;/th&gt;&lt;th&gt;Department&lt;/th&gt;&lt;th&gt;Start Year&lt;/th&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td data-value="User ID"&gt;1&lt;/td&gt;&lt;td data-value="First Name"&gt;Jane&lt;/td&gt;&lt;td data-value="Last Name"&gt;Richards&lt;/td&gt;&lt;td data-value="Department"&gt;Sales&lt;/td&gt;&lt;td data-value="Start Year"&gt;2005&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td data-value="User ID"&gt;2&lt;/td&gt;&lt;td data-value="First Name"&gt;Joe&lt;/td&gt;&lt;td data-value="Last Name"&gt;Smith&lt;/td&gt;&lt;td data-value="Department"&gt;Accounts&lt;/td&gt;&lt;td data-value="Start Year"&gt;2007&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td data-value="User ID"&gt;3&lt;/td&gt;&lt;td data-value="First Name"&gt;Jack&lt;/td&gt;&lt;td data-value="Last Name"&gt;Jones&lt;/td&gt;&lt;td data-value="Department"&gt;Shipping&lt;/td&gt;&lt;td data-value="Start Year"&gt;2010&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td data-value="User ID"&gt;4&lt;/td&gt;&lt;td data-value="First Name"&gt;Joanne&lt;/td&gt;&lt;td data-value="Last Name"&gt;Taylor&lt;/td&gt;&lt;td data-value="Department"&gt;Administration&lt;/td&gt;&lt;td data-value="Start Year"&gt;2008&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td data-value="User ID"&gt;5&lt;/td&gt;&lt;td data-value="First Name"&gt;Jimmy&lt;/td&gt;&lt;td data-value="Last Name"&gt;Brown&lt;/td&gt;&lt;td data-value="Department"&gt;Sales&lt;/td&gt;&lt;td data-value="Start Year"&gt;2003&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td data-value="User ID"&gt;6&lt;/td&gt;&lt;td data-value="First Name"&gt;Jenny&lt;/td&gt;&lt;td data-value="Last Name"&gt;Wilson&lt;/td&gt;&lt;td data-value="Department"&gt;IT&lt;/td&gt;&lt;td data-value="Start Year"&gt;2011&lt;/td&gt;&lt;/tr&gt;<br/>
+		&lt;/table&gt;        
+    </p>
+    
     
     </div>
 </div>    
