@@ -266,6 +266,113 @@
 
 <div class="row section">
 	<div class="sixteen columns">
+    <h2>Tables</h2>
+    
+    <p>The tables are... </p>
+    
+    
+    <h5>Regular Table</h5>
+    <table class="mooi-table">
+    	<tr><th>User ID</th><th>First Name</th><th>Last Name</th></tr>
+        <tr><td>1</td><td>Jane</td><td>Richards</td></tr>
+        <tr><td>2</td><td>Joe</td><td>Smith</td></tr>
+        <tr><td>3</td><td>Jack</td><td>Jones</td></tr>
+    </table>        
+	
+    <p class="code">
+    	&lt;table class="mooi-table"&gt; <br/>
+    	&lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt;&lt;th&gt;First Name&lt;/th&gt;&lt;th&gt;Last Name&lt;/th&gt;&lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Jane&lt;/td&gt;&lt;td&gt;Richards&lt;/td&gt;&lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Joe&lt;/td&gt;&lt;td&gt;Smith&lt;/td&gt;&lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Jack&lt;/td&gt;&lt;td&gt;Jones&lt;/td&gt;&lt;/tr&gt;<br/>
+    &lt;/table&gt;
+	</p>   
+   
+   <h5>Table with all borders</h5>
+	<table class="mooi-table mooi-table-borders-all">
+    	<tr><th>User ID</th><th>First Name</th><th>Last Name</th></tr>
+        <tr><td>1</td><td>Jane</td><td>Richards</td></tr>
+        <tr><td>2</td><td>Joe</td><td>Smith</td></tr>
+        <tr><td>3</td><td>Jack</td><td>Jones</td></tr>
+    </table>
+    
+    <p class="code">
+    	&lt;table class="mooi-table mooi-table-borders-all"&gt; <br/>
+    	&lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt;&lt;th&gt;First Name&lt;/th&gt;&lt;th&gt;Last Name&lt;/th&gt;&lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Jane&lt;/td&gt;&lt;td&gt;Richards&lt;/td&gt;&lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Joe&lt;/td&gt;&lt;td&gt;Smith&lt;/td&gt;&lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Jack&lt;/td&gt;&lt;td&gt;Jones&lt;/td&gt;&lt;/tr&gt;<br/>
+    &lt;/table&gt;
+	</p> 
+    
+    <h5>Tables with horizontal borders</h5>
+    <table class="mooi-table mooi-table-borders-horizontal">
+    	<tr><th>User ID</th><th>First Name</th><th>Last Name</th></tr>
+        <tr><td>1</td><td>Jane</td><td>Richards</td></tr>
+        <tr><td>2</td><td>Joe</td><td>Smith</td></tr>
+        <tr><td>3</td><td>Jack</td><td>Jones</td></tr>
+    </table>
+    
+    <p class="code">
+    	&lt;table class="mooi-table mooi-table-borders-horizontal"&gt; <br/>
+    	&lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt;&lt;th&gt;First Name&lt;/th&gt;&lt;th&gt;Last Name&lt;/th&gt;&lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Jane&lt;/td&gt;&lt;td&gt;Richards&lt;/td&gt;&lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Joe&lt;/td&gt;&lt;td&gt;Smith&lt;/td&gt;&lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Jack&lt;/td&gt;&lt;td&gt;Jones&lt;/td&gt;&lt;/tr&gt;<br/>
+    	&lt;/table&gt;
+	</p> 
+    
+    <h5>Table with striped data rows</h5>
+    <table class="mooi-table mooi-table-zebra">
+    	<tr><th>User ID</th><th>First Name</th><th>Last Name</th></tr>
+        <tr><td>1</td><td>Jane</td><td>Richards</td></tr>
+        <tr><td>2</td><td>Joe</td><td>Smith</td></tr>
+        <tr><td>3</td><td>Jack</td><td>Jones</td></tr>
+        <tr><td>4</td><td>Joanne</td><td>Taylor</td></tr>
+        <tr><td>5</td><td>Jimmy</td><td>Brown</td></tr>
+        <tr><td>6</td><td>Jenny</td><td>Wilson</td></tr>
+	</table>
+    
+    <p class="code">
+    	&lt;table class="mooi-table mooi-table-zebra"&gt;<br/>
+            &lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt;&lt;th&gt;First Name&lt;/th&gt;&lt;th&gt;Last Name&lt;/th&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Jane&lt;/td&gt;&lt;td&gt;Richards&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Joe&lt;/td&gt;&lt;td&gt;Smith&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Jack&lt;/td&gt;&lt;td&gt;Jones&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Joanne&lt;/td&gt;&lt;td&gt;Taylor&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Jimmy&lt;/td&gt;&lt;td&gt;Brown&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;Jenny&lt;/td&gt;&lt;td&gt;Wilson&lt;/td&gt;&lt;/tr&gt;<br/>
+		&lt;/table&gt;    
+    </p>
+    
+    <table class="mooi-table">
+    	<tr><th>User ID</th><th>First Name</th><th>Last Name</th></tr>
+        <tr><td>1</td><td>Jane</td><td>Richards</td></tr>
+        <tr class="mooi-table-odd"><td>2</td><td>Joe</td><td>Smith</td></tr>
+        <tr><td>3</td><td>Jack</td><td>Jones</td></tr>
+        <tr class="mooi-table-odd"><td>4</td><td>Joanne</td><td>Taylor</td></tr>
+        <tr><td>5</td><td>Jimmy</td><td>Brown</td></tr>
+        <tr class="mooi-table-odd"><td>6</td><td>Jenny</td><td>Wilson</td></tr>
+	</table>
+    
+    <p class="code">
+    	&lt;table class="mooi-table"&gt;<br/>
+            &lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt;&lt;th&gt;First Name&lt;/th&gt;&lt;th&gt;Last Name&lt;/th&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Jane&lt;/td&gt;&lt;td&gt;Richards&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr class="mooi-table-odd"&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Joe&lt;/td&gt;&lt;td&gt;Smith&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Jack&lt;/td&gt;&lt;td&gt;Jones&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr class="mooi-table-odd"&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Joanne&lt;/td&gt;&lt;td&gt;Taylor&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Jimmy&lt;/td&gt;&lt;td&gt;Brown&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr class="mooi-table-odd"&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;Jenny&lt;/td&gt;&lt;td&gt;Wilson&lt;/td&gt;&lt;/tr&gt;<br/>
+		&lt;/table&gt;
+	</p>
+    
+    </div>
+</div>    
+
+
+<div class="row section">
+	<div class="sixteen columns">
     <h2>The License</h2>
     	
         <p>Every part of Mooi is free to use, and if you want to tear it apart, change it, or just use it as it was designed feel free. The full license for Mooi is just below, and can be found here as well <a href="http://opensource.org/licenses/mit-license.php">http://opensource.org/licenses/mit-license.php</a>.

@@ -643,6 +643,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 50px;
   font-size: 3.125rem;
+  line-height: 62.5px;
+  line-height: 3.90625rem;
   padding: 15px 0 25px 0;
   padding:  0.9375rem 0 1.5625rem 0;
 }
@@ -650,6 +652,8 @@ h1 {
 h2 {
   font-size: 44px;
   font-size: 2.75rem;
+  line-height: 55px;
+  line-height: 3.4375rem;
   padding: 15px 0 25px 0;
   padding:  0.9375rem 0 1.5625rem 0;
 }
@@ -657,6 +661,8 @@ h2 {
 h3 {
   font-size: 38px;
   font-size: 2.375rem;
+  line-height: 47.5px;
+  line-height: 2.96875rem;
   padding: 12px 0 20px 0;
   padding:  0.75rem 0 1.25rem 0;
 }
@@ -664,6 +670,8 @@ h3 {
 h4 {
   font-size: 32px;
   font-size: 2rem;
+  line-height: 40px;
+  line-height: 2.5rem;
   padding: 10px 0 18px 0;
   padding:  0.625rem 0 1.125rem 0;
 }
@@ -671,6 +679,8 @@ h4 {
 h5 {
   font-size: 26px;
   font-size: 1.625rem;
+  line-height: 32.5px;
+  line-height: 2.03125rem;
   padding: 8px 0 15px 0;
   padding:  0.5rem 0 0.9375rem 0;
 }
@@ -678,6 +688,8 @@ h5 {
 h6 {
   font-size: 20px;
   font-size: 1.25rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
   padding: 8px 0 14px 0;
   padding:  0.5rem 0 0.875rem 0;
 }
@@ -948,31 +960,29 @@ a.mooi-button-red:focus, a.mooi-button-orange:focus, a.mooi-button-green:focus, 
 }
 
 .mooi-table {
-  /* Remove spacing between table cells (from Normalize.css) */
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
   border: 1px solid #cbcbcb;
+  margin: 5px 0;
+  margin:  0.3125rem 0;
 }
 
-.mooi-table caption {
-  color: #000;
-  font: italic 85%/1 arial, sans-serif;
-  padding: 1em 0;
-  text-align: center;
+.mooi-table th {
+  font-weight: bold;
 }
 
 .mooi-table td,
 .mooi-table th {
   border-left: 1px solid #cbcbcb;
-  /*  inner column border */
   border-width: 0 0 0 1px;
   font-size: inherit;
   margin: 0;
   overflow: visible;
-  /*to make ths where the title is really long work*/
   padding: 6px 12px;
+  padding:  0.375rem 0.75rem;
   /* cell padding */
+  background-color: #eee;
 }
 
 .mooi-table td:first-child,
@@ -997,32 +1007,32 @@ striping:
 }
 
 .mooi-table-odd td {
-  background-color: #f2f2f2;
+  background-color: #f2fdff;
 }
 
 /* nth-child selector for modern browsers */
-.mooi-table-striped tr:nth-child(2n-1) td {
-  background-color: #f2f2f2;
+.mooi-table-zebra tr:nth-child(2n-1) td {
+  background-color: #f2fdff;
 }
 
-/* BORDERED TABLES */
-.mooi-table-bordered td {
+/* Borders All Table */
+.mooi-table-borders-all td, .mooi-table-borders-all th {
   border-bottom: 1px solid #cbcbcb;
 }
 
-.mooi-table-bordered tbody > tr:last-child td,
-.mooi-table-horizontal tbody > tr:last-child td {
+.mooi-table-border-all tbody > tr:last-child td,
+.mooi-table-borders-horizontal tbody > tr:last-child td {
   border-bottom-width: 0;
 }
 
-/* HORIZONTAL BORDERED TABLES */
-.mooi-table-horizontal td,
-.mooi-table-horizontal th {
+/* Horizontal Borders Table */
+.mooi-table-borders-horizontal td,
+.mooi-table-borders-horizontal th {
   border-width: 0 0 1px 0;
   border-bottom: 1px solid #cbcbcb;
 }
 
-.mooi-table-horizontal tbody > tr:last-child td {
+.mooi-table-borders-horizontal tbody > tr:last-child td {
   border-bottom-width: 0;
 }
 

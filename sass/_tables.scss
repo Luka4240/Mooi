@@ -1,26 +1,25 @@
+// /* Tables for Mooi */
+
 .mooi-table {
-    /* Remove spacing between table cells (from Normalize.css) */
     border-collapse: collapse;
     border-spacing: 0;
     empty-cells: show;
     border: 1px solid #cbcbcb;
+	@include rem('margin',5px 0);
 }
 
-.mooi-table caption {
-    color: #000;
-    font: italic 85%/1 arial, sans-serif;
-    padding: 1em 0;
-    text-align: center;
+.mooi-table th {
+	font-weight:bold;
 }
-
 .mooi-table td,
 .mooi-table th {
-    border-left: 1px solid #cbcbcb;/*  inner column border */
+    border-left: 1px solid #cbcbcb;
     border-width: 0 0 0 1px;
     font-size: inherit;
     margin: 0;
-    overflow: visible; /*to make ths where the title is really long work*/
-    padding: 6px 12px; /* cell padding */
+    overflow: visible;
+    @include rem('padding', 6px 12px); /* cell padding */
+	background-color:#eee;
 }
 .mooi-table td:first-child,
 .mooi-table th:first-child {
@@ -43,32 +42,31 @@ striping:
     background-color: transparent;
 }
 .mooi-table-odd td {
-    background-color: #f2f2f2;
+    background-color: #f2fdff;
 }
 
 /* nth-child selector for modern browsers */
-.mooi-table-striped tr:nth-child(2n-1) td {
-    background-color: #f2f2f2;
+.mooi-table-zebra tr:nth-child(2n-1) td {
+    background-color: #f2fdff;
 }
 
-/* BORDERED TABLES */
-.mooi-table-bordered td {
+/* Borders All Table */
+.mooi-table-borders-all td, .mooi-table-borders-all th {
     border-bottom: 1px solid #cbcbcb;
 }
-.mooi-table-bordered tbody > tr:last-child td,
-.mooi-table-horizontal tbody > tr:last-child td {
+.mooi-table-border-all tbody > tr:last-child td,
+.mooi-table-borders-horizontal tbody > tr:last-child td {
     border-bottom-width: 0;
 }
 
 
-/* HORIZONTAL BORDERED TABLES */
+/* Horizontal Borders Table */
 
-.mooi-table-horizontal td,
-.mooi-table-horizontal th {
+.mooi-table-borders-horizontal td,
+.mooi-table-borders-horizontal th {
     border-width: 0 0 1px 0;
     border-bottom: 1px solid #cbcbcb;
 }
-.mooi-table-horizontal tbody > tr:last-child td {
+.mooi-table-borders-horizontal tbody > tr:last-child td {
     border-bottom-width: 0;
 }
-
