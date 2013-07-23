@@ -268,7 +268,7 @@
 	<div class="sixteen columns">
     <h2>Tables</h2>
     
-    <p>The tables are... </p>
+    <p>If you decide to use these tables  </p>
     
     
     <h5>Regular Table</h5>
@@ -366,6 +366,17 @@
             &lt;tr class="mooi-table-odd"&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;Jenny&lt;/td&gt;&lt;td&gt;Wilson&lt;/td&gt;&lt;/tr&gt;<br/>
 		&lt;/table&gt;
 	</p>
+    
+    
+    <table class="mooi-table mooi-responsive-table">
+    	<tr><th>User ID</th><th>First Name</th><th>Last Name</th><th>Department</th><th>Start Year</th></tr>
+    	<tr><td data-value="User ID">1</td><td data-value="First Name">Jane</td><td data-value="Last Name">Richards</td><td data-value="Department">Sales</td><td data-value="Start Year">2005</td></tr>
+        <tr><td data-value="User ID">2</td><td data-value="First Name">Joe</td><td data-value="Last Name">Smith</td><td data-value="Department">Accounts</td><td data-value="Start Year">2007</td></tr>
+        <tr><td data-value="User ID">3</td><td data-value="First Name">Jack</td><td data-value="Last Name">Jones</td><td data-value="Department">Shipping</td><td data-value="Start Year">2010</td></tr>
+        <tr><td data-value="User ID">4</td><td data-value="First Name">Joanne</td><td data-value="Last Name">Taylor</td><td data-value="Department">Administration</td><td data-value="Start Year">2008</td></tr>
+        <tr><td data-value="User ID">5</td><td data-value="First Name">Jimmy</td><td data-value="Last Name">Brown</td><td data-value="Department">Sales</td><td data-value="Start Year">2003</td></tr>
+        <tr><td data-value="User ID">6</td><td data-value="First Name">Jenny</td><td data-value="Last Name">Wilson</td><td data-value="Department">IT</td><td data-value="Start Year">2011</td></tr>
+	</table>        
     
     </div>
 </div>    
