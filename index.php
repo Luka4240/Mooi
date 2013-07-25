@@ -43,6 +43,7 @@
 </div>
    
 
+
 <div class="row  section">
 	<div class="sixteen columns">
     	<h3>The Layout</h3>
@@ -119,7 +120,7 @@
 <div class="row section">
 	<div class="sixteen columns">
     	<h2>Typography</h2>
-        <p>The typography for Mooi is set up so that it is easy to read no matter what screen size. Regular font paragraphs are set to 16px with a line height of 24px (1rem), these can be easily changed by modifying the _vars.scss file. </p>
+        <p>The typography for Mooi is set up so that it is easy to read no matter what screen size. Regular font paragraphs are set to 16px with a line height of 24px (1.5rem), these can be easily changed by modifying the _vars.scss file. </p>
 	</div>
     <div class="eight columns"> 
     	<h5>Heading</h5>       
@@ -138,6 +139,11 @@
         
         <h5>Paragraph</h5>
         <p>This is an example of a default paragraph within Mooi. It is easy to modify the paragraph so that it looks the way you want.</p>
+        
+        <h5>Links</h5>
+        <a href="">Normal Link</a><br/>
+        <a href="" class="link-active">Active Link</a><br/>
+        <a href="" class="link-visited">Visited Link</a>
         
 	</div>
     
@@ -200,7 +206,7 @@
         
 		<h5>Coloured Button</h5>
         
-        <p>To use on of the coloured buttons add <code>mooi-button-red</code> after the <code>mooi-button</code> class to any <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element.</p>
+        <p>To use one of the coloured buttons add <code>mooi-button-red</code> after the <code>mooi-button</code> class to any <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element.</p>
         
         <button class="mooi-button mooi-button-green">Green Button</button>
         <button class="mooi-button mooi-button-red">Red Button</button>
@@ -240,27 +246,29 @@
     	<h2>Forms</h2>
         
         <p></p>
+        <form class="mooi-form">
         <label>Regular Input</label>
-        <input class="mooi-input" type="text" /> <br/>
+        <input type="text" />
         
     	<label>Regular Textarea</label>
-    	<textarea class="mooi-input" ></textarea> <br/>
+    	<textarea></textarea>
         
         <label>Select List</label>
-        <select class="mooi-input" >
+        <select>
         	<option value="Option 1">Option 1</option>
             <option value="Option 2">Option 2</option>
             <option value="Option 3">Option 3</option>
 		</select> <br/>
         
         <label>Regular Checkbox</label>
-        <input type="checkbox" /><br/>
-        <input type="checkbox" checked /><br/>
+        <input type="checkbox" />
+        <input type="checkbox" checked />
         <label>Regular Radio Button</label>
-        <input type="radio" /><br/>
-        <input type="radio" checked /><br/>
-        <label>Regular Button</label><br/>
-        <input type="button" class="mooi-button" value="Submit" />
+        <input name="radio" type="radio" value="Yes" />
+        <input name="radio" type="radio" value="No" />
+        <label>Regular Button</label>
+        <input type="button" class="mooi-button mooi-button-primary" value="Submit" />
+        </form>
     </div>
 </div>
 
@@ -268,10 +276,14 @@
 	<div class="sixteen columns">
     <h2>Tables</h2>
     
-    <p>If you decide to use these tables  </p>
+    <p>Mooi comes with a small selection of table styles as well as a solution for Responsive tables.</p>
+    
     
     
     <h5>Regular Table</h5>
+    
+    <p>To use the default Mooi table all you have to do is add the class <code>mooi-table</code> to any <code>&lt;table&gt;</code> element.</p>
+    
     <table class="mooi-table">
     	<tr><th>User ID</th><th>First Name</th><th>Last Name</th></tr>
         <tr><td>1</td><td>Jane</td><td>Richards</td></tr>
@@ -289,6 +301,9 @@
 	</p>   
    
    <h5>Table with all borders</h5>
+   
+   <p>To have a table with all borders you need to add a class of <code>mooi-table-borders-all</code> after <code>mooi-table</code> to any <code>&lt;table&gt;</code> element.</p>
+   
 	<table class="mooi-table mooi-table-borders-all">
     	<tr><th>User ID</th><th>First Name</th><th>Last Name</th></tr>
         <tr><td>1</td><td>Jane</td><td>Richards</td></tr>
@@ -306,6 +321,9 @@
 	</p> 
     
     <h5>Tables with horizontal borders</h5>
+    
+    <p>To have a table with all borders you need to add a class of <code>mooi-table-borders-horizontal</code> after <code>mooi-table</code> to any <code>&lt;table&gt;</code> element.</p>
+    
     <table class="mooi-table mooi-table-borders-horizontal">
     	<tr><th>User ID</th><th>First Name</th><th>Last Name</th></tr>
         <tr><td>1</td><td>Jane</td><td>Richards</td></tr>
@@ -323,6 +341,12 @@
 	</p> 
     
     <h5>Table with striped data rows</h5>
+    
+    <p>To apply striped rows to a table, there are two ways to do it.</p>
+    <p>If you just need to work with modern browsers then just add a class of <code>mooi-table-zebra</code> after <code>mooi-table</code> to any <code>&lt;table&gt;</code> element.</p>
+    <p>However if you have to support older browsers then you will need to give every other <code>&lt;tr&gt;</code> element a class of <code>mooi-table-odd</code> this will work in both the older browsers as well as the modern ones.</p>
+    
+    <h6>Modern Browsers</h6>
     <table class="mooi-table mooi-table-zebra">
     	<tr><th>User ID</th><th>First Name</th><th>Last Name</th></tr>
         <tr><td>1</td><td>Jane</td><td>Richards</td></tr>
@@ -344,7 +368,7 @@
             &lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;Jenny&lt;/td&gt;&lt;td&gt;Wilson&lt;/td&gt;&lt;/tr&gt;<br/>
 		&lt;/table&gt;    
     </p>
-    
+    <h6>Older Browsers</h6>
     <table class="mooi-table">
     	<tr><th>User ID</th><th>First Name</th><th>Last Name</th></tr>
         <tr><td>1</td><td>Jane</td><td>Richards</td></tr>
@@ -367,7 +391,11 @@
 		&lt;/table&gt;
 	</p>
     
-    <h5>Responsive Table</h5>
+    <h5>Responsive Tables</h5>
+    
+    <p>If you need a responsive table a simple solution has been provided that will support up to fourty columns. When the viewable width is reduced, the rows become grouped and stacked as shown below.</p>
+    <p>To have a responsive table you need to add a class of <code>mooi-responsive-table</code> after <code>mooi-table</code> to any <code>&lt;table&gt;</code> element.</p>
+    <p>When creating the table you will need to give every <code>&lt;td&gt;</code> an additional value of <code>data-value="Name"</code> where name equates to the same value as the <code>&lt;td&gt;</code> element it is applied to, the example below demonstrates this.</p>
     
     <table class="mooi-table mooi-responsive-table">
     	<tr><th>User ID</th><th>First Name</th><th>Last Name</th><th>Department</th><th>Start Year</th></tr>

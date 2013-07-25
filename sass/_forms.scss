@@ -1,105 +1,95 @@
-@import "../sass/_mixinlib.scss";
-
 /* ==== FORMS ==== */
-label{
- @if $label-above == true {
-	display:block;
+
+.mooi-form {
+	@if $form-width == 0 {
+		width:100%;
 	}
-	@else if $label-above == false {
-		display:inline-block;
-	}
- cursor: pointer;
- font-weight: bold;
- margin-bottom: 0.3em;
+	@else {width:$form-width;}
 }
 
-/* Text inputs */
-input[type="text"], 
-input[type="password"], 
-input[type="date"], 
-input[type="datetime"], 
-input[type="datetime-local"], 
-input[type="month"], 
-input[type="week"], 
-input[type="email"], 
-input[type="number"], 
-input[type="search"], 
-input[type="tel"], 
-input[type="time"], 
-input[type="url"], 
-textarea {
-	outline: none;
-	@if $label-above == true {
+.mooi-form label{
+	@include rem('margin',0 0 5px 0);
+	cursor: pointer;
+	font-weight:bold;
 	display:block;
+	@if $label-width == 0 {
+		width:auto;
 	}
-	@else if $label-above == false {
-		display:inline-block;
-	}
-	@inclue rem('font-size',14px);
-	color: #888;
-	width:100%;
-	@include rem('margin-bottom',16px);
-	@include rem('padding',8px);
-	border: 1px solid #dedede;
-	background-color: #fff;
-	box-shadow: 0 1px 2px #eee inset;
-	transition:    all 0.25s ease-in-out;
-	-webkit-transition:  all 0.25s ease-in-out;
-	-moz-transition:   all 0.25s ease-in-out;
-	@include border-radius(3px);
-	outline: none;
+	@else {width:$label-width;}
 }
-input[type="text"]:focus, 
-input[type="password"]:focus, 
-input[type="date"]:focus, 
-input[type="datetime"]:focus, 
-input[type="datetime-local"]:focus, 
-input[type="month"]:focus, 
-input[type="week"]:focus, 
-input[type="email"]:focus, 
-input[type="number"]:focus, 
-input[type="search"]:focus, 
-input[type="tel"]:focus, 
-input[type="time"]:focus, 
-input[type="url"]:focus, 
-textarea:focus{
-	border: 1px solid #51a7e8;
-	box-shadow: 0 0 4px #51afff, 
-				0 1px 2px #eee inset; }
 
-.mooi-label {
-	width:$label-width;
-}
-.mooi-input {
+.mooi-form input[type="text"],
+.mooi-form input[type="password"],
+.mooi-form input[type="email"],
+.mooi-form input[type="url"],
+.mooi-form input[type="date"],
+.mooi-form input[type="month"],
+.mooi-form input[type="time"],
+.mooi-form input[type="datetime"],
+.mooi-form input[type="datetime-local"],
+.mooi-form input[type="week"],
+.mooi-form input[type="number"],
+.mooi-form input[type="search"],
+.mooi-form input[type="tel"],
+.mooi-form input[type="color"],
+.mooi-form select,
+.mooi-form textarea {
+	@include rem('padding',8px 5px);
+	@include rem('margin-bottom',5px);
+	@include rem('font-size', 14px);
+    @include border-radius(4px);
 	
+    display: block;
+    border: 1px solid #ccc;
+    
+	box-shadow: inset 0 1px 3px #ddd inset;
+	-webkit-transition: 0.3s linear ease-in-out;
+    -moz-transition: 0.3s linear ease-in-out;
+    -ms-transition: 0.3s linear ease-in-out;
+    -o-transition: 0.3s linear ease-in-out;
+    transition: 0.3s linear ease-in-out;
+    -webkit-font-smoothing: antialiased;
+	color: #666;
+	outline: none;
 	@if $input-width == 0 {
 		width:100%;
 	}
 	@else {width:$input-width;}
-	
-	outline: none;
-	@if $label-above == true {
-	display:block;
-	}
-	@else if $label-above == false {
-		display:inline-block;
-	}
-	@inclue rem('font-size',14px);
-	color: #888;
-	@include rem('margin-bottom',16px);
-	@include rem('padding',8px);
-	border: 1px solid #dedede;
-	background-color: #fff;
-	box-shadow: 0 1px 2px #eee inset;
-	transition:    all 0.25s ease-in-out;
-	-webkit-transition:  all 0.25s ease-in-out;
-	-moz-transition:   all 0.25s ease-in-out;
-	@include border-radius(3px);
-	outline: none;
-	
 }
-.mooi-input:focus {
-	border: 1px solid #51a7e8;
-	box-shadow: 0 0 4px #51afff, 
+
+.mooi-form input[type="text"]:focus,
+.mooi-form input[type="password"]:focus,
+.mooi-form input[type="email"]:focus,
+.mooi-form input[type="url"]:focus,
+.mooi-form input[type="date"]:focus,
+.mooi-form input[type="month"]:focus,
+.mooi-form input[type="time"]:focus,
+.mooi-form input[type="datetime"]:focus,
+.mooi-form input[type="datetime-local"]:focus,
+.mooi-form input[type="week"]:focus,
+.mooi-form input[type="number"]:focus,
+.mooi-form input[type="search"]:focus,
+.mooi-form input[type="tel"]:focus,
+.mooi-form input[type="color"]:focus,
+.mooi-form select:focus,
+.mooi-form textarea:focus {
+    border: 1px solid #C814FA;
+	box-shadow: 0 0 4px #e498f9, 
 				0 1px 2px #eee inset;
 }
+
+.mooi-form input[type="radio"],
+.mooi-form input[type="checkbox"] {
+	display:block;
+	@include rem('padding', 2px);
+	@include rem('margin', 4px 0);
+}
+
+.mooi-form input[type="radio"]:hover,
+.mooi-form input[type="checkbox"]:hover {
+	border: 1px solid #C814FA;
+	box-shadow: 0 0 4px #e498f9, 
+				0 1px 2px #eee inset;
+}
+
+

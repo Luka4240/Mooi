@@ -13,7 +13,7 @@
 	border: none rgba(0,0,0,0);
 	background-color: #E6E6E6;
 	text-decoration:none;
-	@include border-radius(4px);
+	@include border-radius($button-radius);
 	-webkit-font-smoothing: antialiased;
 	-webkit-transition: 0.1s linear -webkit-box-shadow;/* Transitions */
     -moz-transition: 0.1s linear -moz-box-shadow;
@@ -59,7 +59,7 @@ a.mooi-button:hover, a.mooi-button:focus, .mooi-button:hover, .mooi-button:focus
 }
 
 .mooi-button-primary, .mooi-button-primary:visited,.mooi-button-primary:active, a.mooi-button-primary, a.mooi-button-primary:visited, a.mooi-button-primary:active {
-    background-color:#C814FA;
+    background-color:$primary-button-color;
     color: #fff;
 }
 .mooi-button-primary:hover, a.mooi-button-primary:hover, .mooi-button-primary:focus, a.mooi-button-primary:focus {
@@ -68,24 +68,24 @@ a.mooi-button:hover, a.mooi-button:focus, .mooi-button:hover, .mooi-button:focus
 
 .mooi-button-red, .mooi-button-orange, .mooi-button-green, .mooi-button-blue, a.mooi-button-red, a.mooi-button-orange, a.mooi-button-green, a.mooi-button-blue, .mooi-button-red:active, .mooi-button-orange:active, .mooi-button-green:active, .mooi-button-blue:active, a.mooi-button-red:active, a.mooi-button-orange:active, a.mooi-button-green:active, a.mooi-button-blue:active, .mooi-button-red:visited, .mooi-button-orange:visited, .mooi-button-green:visited, .mooi-button-blue:visited, a.mooi-button-red:visited, a.mooi-button-orange:visited, a.mooi-button-green:visited, a.mooi-button-blue:visited {
 	color: #fff;;
-	border-radius: 4px;
+	@include border-radius($button-radius);
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .mooi-button-green, a.mooi-button-green, a.mooi-button-green:active, a.mooi-button-green:visited {
-	background:#0CAA1E;
+	background:$green-button-color;
 }
 
 .mooi-button-red, a.mooi-button-red, a.mooi-button-red:active, a.mooi-button-red:visited {
-	background:#DC2828;
+	background:$red-button-color;
 }
 
 .mooi-button-orange, a.mooi-button-orange, a.mooi-button-orange:active, a.mooi-button-orange:visited {
-	background:#FF8200;
+	background:$orange-button-color;
 }
 
 .mooi-button-blue, a.mooi-button-blue, a.mooi-button-blue:active, a.mooi-button-blue:visited {
-	background:#32A0C8;
+	background:$blue-button-color;
 }
 
 .mooi-button-red:hover, .mooi-button-orange:hover, .mooi-button-green:hover, .mooi-button-blue:hover, 

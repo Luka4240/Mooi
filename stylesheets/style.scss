@@ -61,7 +61,8 @@
 }
 .scroll {max-width:300px;display:block;margin-right:auto;margin-left:auto;@include rem('margin-bottom',10px);}
 
-
+a.link-active {color:$linkActive;}
+.link-visited a{color:$linkVisited;}
 
 /* #Media Queries
 ================================================== */

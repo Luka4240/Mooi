@@ -1,0 +1,16 @@
+@mixin background-color($color, $path, $alpha: 1)
+{
+    $rgba: 'rgba(#' + $color + ', ' + $alpha + ')';
+    $css-color: unquote($rgba);
+        
+    $filename: 'solid-' + $color + '-' + $alpha * 100 + '.png';
+    $url: 'url(' + $path + $filename + ')';
+    
+    background-color: unquote($url);
+    background-color: $css-color;
+}
+
+.element {
+	@include background-color(#eeeeee, .5);
+	color: rgb(#eeeeee);
+}

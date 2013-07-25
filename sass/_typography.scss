@@ -36,8 +36,10 @@ h6 {@include fontSize($h6Size);
 p {font-size:$default-fontSize;
 	@include rem('padding', 5px 0); }
 	
-a:link, a:active, a:visited { text-decoration:none;color:$linkColor;}
-a:hover {text-decoration:underline; color:$linkHover;}	
+a:link { text-decoration:none;color:$linkColor;}
+a:visited { text-decoration:none;color:$linkVisited;}
+a:hover, a:focus {text-decoration:underline; color:$linkHover;}	
+a:active {text-decoration:none;color:$linkActive;}
 
 blockquote {
 	font-size:$default-fontSize;

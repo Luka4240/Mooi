@@ -136,6 +136,15 @@
 
 // /* ============================================================================================== */
 
+
+@mixin rgba-background($property, $color, $opacity) {
+    position: relative;
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+
+
 @mixin transition($transition-property, $transition-time, $method) {
     -webkit-transition: $transition-property $transition-time $method;
     -moz-transition: $transition-property $transition-time $method;

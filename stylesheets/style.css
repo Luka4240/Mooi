@@ -219,8 +219,19 @@ textarea {
 }
 
 /* 1. Remove default vertical scrollbar in IE 8/9. 2. Improve readability and alignment in all browsers. */
+/* =====================================
+	  Variables for the Mooi Framework 
+   ===================================== */
+/* ===================
+   Typography Settings 
+   =================== */
 /*16px*/
-/* This can only be true or false */
+/* ===================
+	  Form Settings 
+   =================== */
+/* ===================
+	Button Settings 
+   =================== */
 /* CSS Document */
 /* CSS Document 
 	RFWD CSS File */
@@ -700,14 +711,24 @@ p {
   padding:  0.3125rem 0;
 }
 
-a:link, a:active, a:visited {
+a:link {
   text-decoration: none;
   color: #333333;
 }
 
-a:hover {
+a:visited {
+  text-decoration: none;
+  color: #666666;
+}
+
+a:hover, a:focus {
   text-decoration: underline;
   color: blue;
+}
+
+a:active {
+  text-decoration: none;
+  color: #c814fa;
 }
 
 blockquote {
@@ -736,102 +757,94 @@ q {
 }
 
 /* ==== FORMS ==== */
-label {
-  display: block;
+.mooi-form {
+  width: 100%;
+}
+
+.mooi-form label {
+  margin: 0 0 5px 0;
+  margin:  0 0 0.3125rem 0;
   cursor: pointer;
   font-weight: bold;
-  margin-bottom: 0.3em;
+  display: block;
+  width: auto;
 }
 
-/* Text inputs */
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-textarea {
-  outline: none;
-  display: block;
-  @inclue rem('font-size',14px);
-  color: #888;
-  width: 100%;
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
-  padding: 8px;
-  padding: 0.5rem;
-  border: 1px solid #dedede;
-  background-color: #fff;
-  box-shadow: 0 1px 2px #eee inset;
-  transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+.mooi-form input[type="text"],
+.mooi-form input[type="password"],
+.mooi-form input[type="email"],
+.mooi-form input[type="url"],
+.mooi-form input[type="date"],
+.mooi-form input[type="month"],
+.mooi-form input[type="time"],
+.mooi-form input[type="datetime"],
+.mooi-form input[type="datetime-local"],
+.mooi-form input[type="week"],
+.mooi-form input[type="number"],
+.mooi-form input[type="search"],
+.mooi-form input[type="tel"],
+.mooi-form input[type="color"],
+.mooi-form select,
+.mooi-form textarea {
+  padding: 8px 5px;
+  padding:  0.5rem 0.3125rem;
+  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  outline: none;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="date"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="time"]:focus,
-input[type="url"]:focus,
-textarea:focus {
-  border: 1px solid #51a7e8;
-  box-shadow: 0 0 4px #51afff,  0 1px 2px #eee inset;
-}
-
-.mooi-label {
-  width: 120px;
-}
-
-.mooi-input {
-  width: 300px;
-  outline: none;
   display: block;
-  @inclue rem('font-size',14px);
-  color: #888;
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
-  padding: 8px;
-  padding: 0.5rem;
-  border: 1px solid #dedede;
-  background-color: #fff;
-  box-shadow: 0 1px 2px #eee inset;
-  transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd inset;
+  -webkit-transition: 0.3s linear ease-in-out;
+  -moz-transition: 0.3s linear ease-in-out;
+  -ms-transition: 0.3s linear ease-in-out;
+  -o-transition: 0.3s linear ease-in-out;
+  transition: 0.3s linear ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  color: #666;
   outline: none;
+  width: 250px;
 }
 
-.mooi-input:focus {
-  border: 1px solid #51a7e8;
-  box-shadow: 0 0 4px #51afff,  0 1px 2px #eee inset;
+.mooi-form input[type="text"]:focus,
+.mooi-form input[type="password"]:focus,
+.mooi-form input[type="email"]:focus,
+.mooi-form input[type="url"]:focus,
+.mooi-form input[type="date"]:focus,
+.mooi-form input[type="month"]:focus,
+.mooi-form input[type="time"]:focus,
+.mooi-form input[type="datetime"]:focus,
+.mooi-form input[type="datetime-local"]:focus,
+.mooi-form input[type="week"]:focus,
+.mooi-form input[type="number"]:focus,
+.mooi-form input[type="search"]:focus,
+.mooi-form input[type="tel"]:focus,
+.mooi-form input[type="color"]:focus,
+.mooi-form select:focus,
+.mooi-form textarea:focus {
+  border: 1px solid #C814FA;
+  box-shadow: 0 0 4px #e498f9,  0 1px 2px #eee inset;
+}
+
+.mooi-form input[type="radio"],
+.mooi-form input[type="checkbox"] {
+  display: block;
+  padding: 2px;
+  padding: 0.125rem;
+  margin: 4px 0;
+  margin:  0.25rem 0;
+}
+
+.mooi-form input[type="radio"]:hover,
+.mooi-form input[type="checkbox"]:hover {
+  border: 1px solid #C814FA;
+  box-shadow: 0 0 4px #e498f9,  0 1px 2px #eee inset;
 }
 
 .mooi-button, .mooi-button:visited, a.mooi-button, a.mooi-button:visited {
@@ -906,7 +919,7 @@ a.mooi-button:hover, a.mooi-button:focus, .mooi-button:hover, .mooi-button:focus
 }
 
 .mooi-button-primary, .mooi-button-primary:visited, .mooi-button-primary:active, a.mooi-button-primary, a.mooi-button-primary:visited, a.mooi-button-primary:active {
-  background-color: #C814FA;
+  background-color: #c814fa;
   color: #fff;
 }
 
@@ -916,24 +929,29 @@ a.mooi-button:hover, a.mooi-button:focus, .mooi-button:hover, .mooi-button:focus
 
 .mooi-button-red, .mooi-button-orange, .mooi-button-green, .mooi-button-blue, a.mooi-button-red, a.mooi-button-orange, a.mooi-button-green, a.mooi-button-blue, .mooi-button-red:active, .mooi-button-orange:active, .mooi-button-green:active, .mooi-button-blue:active, a.mooi-button-red:active, a.mooi-button-orange:active, a.mooi-button-green:active, a.mooi-button-blue:active, .mooi-button-red:visited, .mooi-button-orange:visited, .mooi-button-green:visited, .mooi-button-blue:visited, a.mooi-button-red:visited, a.mooi-button-orange:visited, a.mooi-button-green:visited, a.mooi-button-blue:visited {
   color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .mooi-button-green, a.mooi-button-green, a.mooi-button-green:active, a.mooi-button-green:visited {
-  background: #0CAA1E;
+  background: #0caa1e;
 }
 
 .mooi-button-red, a.mooi-button-red, a.mooi-button-red:active, a.mooi-button-red:visited {
-  background: #DC2828;
+  background: #dc2828;
 }
 
 .mooi-button-orange, a.mooi-button-orange, a.mooi-button-orange:active, a.mooi-button-orange:visited {
-  background: #FF8200;
+  background: #ff8200;
 }
 
 .mooi-button-blue, a.mooi-button-blue, a.mooi-button-blue:active, a.mooi-button-blue:visited {
-  background: #32A0C8;
+  background: #32a0c8;
 }
 
 .mooi-button-red:hover, .mooi-button-orange:hover, .mooi-button-green:hover, .mooi-button-blue:hover,
@@ -1043,18 +1061,18 @@ striping:
 
 /* Zebra striping */
 .mooi-responsive-table tr:nth-of-type(odd) {
-  background: #eee;
+  background: #f2fdff;
 }
 
 .mooi-responsive-table th {
-  background: #333;
-  color: white;
+  background: #eee;
+  color: #000;
   font-weight: bold;
+  border-top: 1px solid #cbcbcb;
 }
 
 .mooi-responsive-table td, .mooi-responsive-table th {
   padding: 6px;
-  border: 1px solid #ccc;
   text-align: left;
 }
 
@@ -1074,23 +1092,20 @@ and also iPads specifically.
     position: absolute;
     top: -9999px;
     left: -9999px;
+    border: none;
   }
 
   .mooi-responsive-table thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
-  }
-
-  .mooi-responsive-table tr {
-    border: 1px solid #ccc;
+    border: none;
   }
 
   .mooi-responsive-table td {
     /* Behave  like a "row" */
     display: inline-block;
     border: none;
-    border-bottom: 1px solid #eee;
     position: relative;
     padding-left: 50%;
   }
@@ -1148,6 +1163,126 @@ and also iPads specifically.
   }
 
   .mooi-responsive-table td:nth-of-type(10):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(11):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(12):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(13):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(14):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(15):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(16):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(17):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(18):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(19):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(20):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(21):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(22):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(23):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(24):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(25):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(26):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(27):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(28):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(29):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(30):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(31):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(32):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(33):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(34):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(35):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(36):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(37):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(38):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(39):before {
+    content: attr(data-value) ": ";
+  }
+
+  .mooi-responsive-table td:nth-of-type(40):before {
     content: attr(data-value) ": ";
   }
 }
@@ -1288,6 +1423,14 @@ and also iPads specifically.
   margin-left: auto;
   margin-bottom: 10px;
   margin-bottom: 0.625rem;
+}
+
+a.link-active {
+  color: #c814fa;
+}
+
+.link-visited a {
+  color: #666666;
 }
 
 /* #Media Queries

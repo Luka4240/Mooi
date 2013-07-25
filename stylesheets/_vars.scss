@@ -1,8 +1,17 @@
-// /* Variables for Mooi */
+/* =====================================
+	  Variables for the Mooi Framework 
+   ===================================== */
+
+
 
 $max-page-width: 1280px; // /* Sets the maximum width for the web page */
 
-// /* Set Font Sizes for Body and Headings */
+
+
+/* ===================
+   Typography Settings 
+   =================== */
+
 
 $default-fontSize: 16px; /*16px*/
 $h1Size: 50px;
@@ -17,10 +26,30 @@ $body-font: "Museo Sans Rounded 300", Arial, 'Helvetica Neue', Helvetica, sans-s
 $header-font: "Museo Sans Rounded 300", Arial, 'Helvetica Neue', Helvetica, sans-serif ;
 
 $fontColor: #111 ;
+
 $linkColor: #333 ;
+$linkVisited: #666;
 $linkHover: #00F ;
+$linkActive: #c814FA;
 
-$input-width: 300px;
-$label-width: 120px;
-$label-above: true!default; /* This can only be true or false */
+/* ===================
+	  Form Settings 
+   =================== */
 
+$form-width: 0;
+$input-width: 250px;
+$label-width: 0;
+
+
+/* ===================
+	Button Settings 
+   =================== */
+
+$button-radius: 4px;
+
+$primary-button-color: #C814FA ;
+
+$green-button-color: #0CAA1E ;
+$red-button-color: #DC2828 ;
+$orange-button-color: #FF8200 ;
+$blue-button-color: #32A0C8 ;

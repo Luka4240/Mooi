@@ -81,16 +81,16 @@ striping:
 }
 /* Zebra striping */
 .mooi-responsive-table tr:nth-of-type(odd) { 
-  background: #eee; 
+  background: #f2fdff; 
 }
 .mooi-responsive-table th { 
-  background: #333; 
-  color: white; 
-  font-weight: bold; 
+  background: #eee; 
+  color: #000; 
+  font-weight: bold;
+  border-top:1px solid #cbcbcb 
 }
 .mooi-responsive-table td, .mooi-responsive-table th { 
   padding: 6px; 
-  border: 1px solid #ccc; 
   text-align: left; 
 }
 
@@ -113,6 +113,7 @@ only screen and (max-width: 760px),
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
+		border:none;
 	}
 	
 	
@@ -120,15 +121,15 @@ only screen and (max-width: 760px),
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
+		border:none;
 	}
 	
-	.mooi-responsive-table tr { border: 1px solid #ccc; }
+	.mooi-responsive-table tr {  }
 	
 	.mooi-responsive-table td { 
 		/* Behave  like a "row" */
 		display:inline-block;
 		border: none;
-		border-bottom: 1px solid #eee; 
 		position: relative;
 		padding-left: 50%; 
 	}
@@ -158,6 +159,35 @@ only screen and (max-width: 760px),
 	.mooi-responsive-table td:nth-of-type(8):before { content: attr(data-value) ": "; }
 	.mooi-responsive-table td:nth-of-type(9):before { content: attr(data-value) ": "; }
 	.mooi-responsive-table td:nth-of-type(10):before { content: attr(data-value) ": "; }
-	
+	.mooi-responsive-table td:nth-of-type(11):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(12):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(13):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(14):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(15):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(16):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(17):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(18):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(19):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(20):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(21):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(22):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(23):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(24):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(25):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(26):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(27):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(28):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(29):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(30):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(31):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(32):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(33):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(34):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(35):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(36):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(37):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(38):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(39):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(40):before { content: attr(data-value) ": "; }
 
 }
