@@ -9,7 +9,7 @@
 
 .mooi-form label{
 	@include rem('margin',0 0 5px 0);
-	cursor: pointer;
+	cursor: default;
 	font-weight:bold;
 	display:block;
 	@if $label-width == 0 {
@@ -78,18 +78,95 @@
 				0 1px 2px #eee inset;
 }
 
-.mooi-form input[type="radio"],
-.mooi-form input[type="checkbox"] {
-	display:block;
-	@include rem('padding', 2px);
-	@include rem('margin', 4px 0);
+
+.mooi-form-inline-label {
+	display: inline;
 }
 
-.mooi-form input[type="radio"]:hover,
-.mooi-form input[type="checkbox"]:hover {
-	border: 1px solid #C814FA;
-	box-shadow: 0 0 4px #e498f9, 
-				0 1px 2px #eee inset;
+.mooi-form-checkbox {
+	display: none;
 }
 
+.mooi-form-checkbox + label {
+	background-color: #fefefe;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 3px #ddd inset;
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
 
+.mooi-form-checkbox + label:active, .mooi-form-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.mooi-form-checkbox:checked + label {
+	background-color: #efefef;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.mooi-form-checkbox:checked + label:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: -2px;
+	left: 3px;
+	color: #666;
+}
+.mooi-form-holder-checkbox {
+	width: 200px;
+	position: relative;
+	top: 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block;
+	float: left;
+}
+.radio-1 {
+	width: 193px;
+}
+
+.mooi-form-holder {
+	float: left;
+}
+
+/* RADIO */
+
+.mooi-form-radio {
+	display: none;
+}
+
+.mooi-form-radio + label {
+	-webkit-appearance: none;
+	background-color: #fefefe;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 3px #ddd inset;
+	padding: 9px;
+	border-radius: 50px;
+	display: inline-block;
+	position: relative;
+}
+
+.mooi-form-radio:checked + label:after {
+	content: '\2022';
+	width: 12px;
+	height: 12px;
+	border-radius: 50px;
+	position: absolute;
+	top: -4px;
+	text-shadow: 0px;
+	left: -1px;
+	font-size: 48px;
+	-webkit-font-smoothing:antialiased;
+}
+
+.mooi-form-radio:checked + label {
+	color: #666;
+	border: 1px solid #ccc;
+}
+
+.mooi-form-radio + label:active, .mooi-form-radio:checked + label:active {
+}

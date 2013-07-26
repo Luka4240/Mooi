@@ -649,6 +649,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Museo Sans Rounded 300", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
+  cursor: default;
 }
 
 h1 {
@@ -764,7 +765,7 @@ q {
 .mooi-form label {
   margin: 0 0 5px 0;
   margin:  0 0 0.3125rem 0;
-  cursor: pointer;
+  cursor: default;
   font-weight: bold;
   display: block;
   width: auto;
@@ -798,6 +799,7 @@ q {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
+  behavior: url(./jquery/css3/PIE.htc);
   display: block;
   border: 1px solid #ccc;
   box-shadow: inset 0 1px 3px #ddd inset;
@@ -832,19 +834,94 @@ q {
   box-shadow: 0 0 4px #e498f9,  0 1px 2px #eee inset;
 }
 
-.mooi-form input[type="radio"],
-.mooi-form input[type="checkbox"] {
-  display: block;
-  padding: 2px;
-  padding: 0.125rem;
-  margin: 4px 0;
-  margin:  0.25rem 0;
+.mooi-form-inline-label {
+  display: inline;
 }
 
-.mooi-form input[type="radio"]:hover,
-.mooi-form input[type="checkbox"]:hover {
-  border: 1px solid #C814FA;
-  box-shadow: 0 0 4px #e498f9,  0 1px 2px #eee inset;
+.mooi-form-checkbox {
+  display: none;
+}
+
+.mooi-form-checkbox + label {
+  background-color: #fefefe;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd inset;
+  padding: 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+.mooi-form-checkbox + label:active, .mooi-form-checkbox:checked + label:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.mooi-form-checkbox:checked + label {
+  background-color: #efefef;
+  border: 1px solid #adb8c0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+  color: #99a1a7;
+}
+
+.mooi-form-checkbox:checked + label:after {
+  content: '\2714';
+  font-size: 14px;
+  position: absolute;
+  top: -2px;
+  left: 3px;
+  color: #666;
+}
+
+.mooi-form-holder-checkbox {
+  width: 200px;
+  position: relative;
+  top: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  float: left;
+}
+
+.radio-1 {
+  width: 193px;
+}
+
+.mooi-form-holder {
+  float: left;
+}
+
+/* RADIO */
+.mooi-form-radio {
+  display: none;
+}
+
+.mooi-form-radio + label {
+  -webkit-appearance: none;
+  background-color: #fefefe;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd inset;
+  padding: 9px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+}
+
+.mooi-form-radio:checked + label:after {
+  content: '\2022';
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  position: absolute;
+  top: -4px;
+  text-shadow: 0px;
+  left: -1px;
+  font-size: 48px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mooi-form-radio:checked + label {
+  color: #666;
+  border: 1px solid #ccc;
 }
 
 .mooi-button, .mooi-button:visited, a.mooi-button, a.mooi-button:visited {
@@ -871,6 +948,7 @@ q {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
+  behavior: url(./jquery/css3/PIE.htc);
   -webkit-font-smoothing: antialiased;
   -webkit-transition: 0.1s linear -webkit-box-shadow;
   /* Transitions */
@@ -935,6 +1013,7 @@ a.mooi-button:hover, a.mooi-button:focus, .mooi-button:hover, .mooi-button:focus
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
+  behavior: url(./jquery/css3/PIE.htc);
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -1055,7 +1134,7 @@ striping:
 }
 
 .mooi-responsive-table table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
 }
 
@@ -1315,6 +1394,7 @@ and also iPads specifically.
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
+  behavior: url(./jquery/css3/PIE.htc);
 }
 
 .mooi-menu-right ul li a:link, .mooi-menu-left ul li a:link {
@@ -1372,6 +1452,7 @@ and also iPads specifically.
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
+  behavior: url(./jquery/css3/PIE.htc);
   text-align: center;
   padding: 4px 0;
   padding:  0.25rem 0;

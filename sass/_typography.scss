@@ -12,7 +12,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: $header-font; 
 	font-weight:normal; 
-	font-style:normal; }
+	font-style:normal;
+	cursor:default; }
 	
 h1 {@include fontSize($h1Size);
 	@include rem('line-height', $h1Size * 1.25);

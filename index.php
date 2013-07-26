@@ -3,12 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title>Mooi | A Beautifully Clean and Simple SCSS Framework</title>
+<!-- css3-mediaqueries.js for IE less than 9 -->
+ <!--[if lte IE 8]>
+<script src="http://www.lukehoward.me.uk/mooi/jquery/html5shiv.js"></script>
 
+<![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/lukehoward.me.uk/35410.css" type="text/css" />
 <link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/www.lukehoward.me.uk/35410.css" type="text/css" />
 <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
-
+<!-- css3-mediaqueries.js for IE less than 9 -->
+ <!--[if lte IE 8]>
+<script src="http://www.lukehoward.me.uk/mooi/jquery/respond.js"></script>
+<![endif]-->
 </head>
 
 <body>
@@ -247,26 +254,30 @@
         
         <p></p>
         <form class="mooi-form">
-        <label>Regular Input</label>
+        <h6>Regular Input</h6>
         <input type="text" />
         
-    	<label>Regular Textarea</label>
+    	<h6>Regular Textarea</h6>
     	<textarea></textarea>
         
-        <label>Select List</label>
+        <h6>Select List</h6>
         <select>
         	<option value="Option 1">Option 1</option>
             <option value="Option 2">Option 2</option>
             <option value="Option 3">Option 3</option>
 		</select> <br/>
         
-        <label>Regular Checkbox</label>
-        <input type="checkbox" />
-        <input type="checkbox" checked />
-        <label>Regular Radio Button</label>
-        <input name="radio" type="radio" value="Yes" />
-        <input name="radio" type="radio" value="No" />
-        <label>Regular Button</label>
+        <h6>Regular Checkbox</h6>
+		<input type="checkbox" id="checkbox-1-1" class="mooi-form-checkbox" /><label class=".mooi-form-inline-label" for="checkbox-1-1"></label>
+		<input type="checkbox" id="checkbox-1-2" class="mooi-form-checkbox" /><label class=".mooi-form-inline-label" for="checkbox-1-2"></label>
+		<input type="checkbox" id="checkbox-1-3" class="mooi-form-checkbox" /><label class=".mooi-form-inline-label" for="checkbox-1-3"></label>
+		<input type="checkbox" id="checkbox-1-4" class="mooi-form-checkbox" /><label class=".mooi-form-inline-label" for="checkbox-1-4"></label>
+        <h6>Regular Radio Button</h6>
+        <input name="radio" class="mooi-form-radio" id="radio-1" type="radio" value="Yes" /><label class=".mooi-form-inline-label" for="radio-1"></label>
+        <input name="radio" class="mooi-form-radio" id="radio-2" type="radio" value="No" /><label class=".mooi-form-inline-label" for="radio-2"></label>
+        
+        
+        <h6>Regular Button</h6>
         <input type="button" class="mooi-button mooi-button-primary" value="Submit" />
         </form>
     </div>
@@ -293,10 +304,10 @@
 	
     <p class="code">
     	&lt;table class="mooi-table"&gt; <br/>
-    	&lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt;&lt;th&gt;First Name&lt;/th&gt;&lt;th&gt;Last Name&lt;/th&gt;&lt;/tr&gt;<br/>
-        &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Jane&lt;/td&gt;&lt;td&gt;Richards&lt;/td&gt;&lt;/tr&gt;<br/>
-        &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Joe&lt;/td&gt;&lt;td&gt;Smith&lt;/td&gt;&lt;/tr&gt;<br/>
-        &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Jack&lt;/td&gt;&lt;td&gt;Jones&lt;/td&gt;&lt;/tr&gt;<br/>
+    	&lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt; &lt;th&gt;First Name&lt;/th&gt; &lt;th&gt;Last Name&lt;/th&gt; &lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;1&lt;/td&gt; &lt;td&gt;Jane&lt;/td&gt; &lt;td&gt;Richards&lt;/td&gt; &lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;2&lt;/td&gt; &lt;td&gt;Joe&lt;/td&gt; &lt;td&gt;Smith&lt;/td&gt; &lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;3&lt;/td&gt; &lt;td&gt;Jack&lt;/td&gt; &lt;td&gt;Jones&lt;/td&gt; &lt;/tr&gt;<br/>
     &lt;/table&gt;
 	</p>   
    
@@ -313,10 +324,10 @@
     
     <p class="code">
     	&lt;table class="mooi-table mooi-table-borders-all"&gt; <br/>
-    	&lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt;&lt;th&gt;First Name&lt;/th&gt;&lt;th&gt;Last Name&lt;/th&gt;&lt;/tr&gt;<br/>
-        &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Jane&lt;/td&gt;&lt;td&gt;Richards&lt;/td&gt;&lt;/tr&gt;<br/>
-        &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Joe&lt;/td&gt;&lt;td&gt;Smith&lt;/td&gt;&lt;/tr&gt;<br/>
-        &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Jack&lt;/td&gt;&lt;td&gt;Jones&lt;/td&gt;&lt;/tr&gt;<br/>
+    	&lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt; &lt;th&gt;First Name&lt;/th&gt; &lt;th&gt;Last Name&lt;/th&gt; &lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;1&lt;/td&gt; &lt;td&gt;Jane&lt;/td&gt; &lt;td&gt;Richards&lt;/td&gt; &lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;2&lt;/td&gt; &lt;td&gt;Joe&lt;/td&gt; &lt;td&gt;Smith&lt;/td&gt; &lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;3&lt;/td&gt; &lt;td&gt;Jack&lt;/td&gt; &lt;td&gt;Jones&lt;/td&gt; &lt;/tr&gt;<br/>
     &lt;/table&gt;
 	</p> 
     
@@ -333,10 +344,10 @@
     
     <p class="code">
     	&lt;table class="mooi-table mooi-table-borders-horizontal"&gt; <br/>
-    	&lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt;&lt;th&gt;First Name&lt;/th&gt;&lt;th&gt;Last Name&lt;/th&gt;&lt;/tr&gt;<br/>
-        &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Jane&lt;/td&gt;&lt;td&gt;Richards&lt;/td&gt;&lt;/tr&gt;<br/>
-        &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Joe&lt;/td&gt;&lt;td&gt;Smith&lt;/td&gt;&lt;/tr&gt;<br/>
-        &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Jack&lt;/td&gt;&lt;td&gt;Jones&lt;/td&gt;&lt;/tr&gt;<br/>
+    	&lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt; &lt;th&gt;First Name&lt;/th&gt; &lt;th&gt;Last Name&lt;/th&gt; &lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;1&lt;/td&gt; &lt;td&gt;Jane&lt;/td&gt; &lt;td&gt;Richards&lt;/td&gt; &lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;2&lt;/td&gt; &lt;td&gt;Joe&lt;/td&gt; &lt;td&gt;Smith&lt;/td&gt; &lt;/tr&gt;<br/>
+        &lt;tr&gt;&lt;td&gt;3&lt;/td&gt; &lt;td&gt;Jack&lt;/td&gt; &lt;td&gt;Jones&lt;/td&gt; &lt;/tr&gt;<br/>
     	&lt;/table&gt;
 	</p> 
     
@@ -359,13 +370,13 @@
     
     <p class="code">
     	&lt;table class="mooi-table mooi-table-zebra"&gt;<br/>
-            &lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt;&lt;th&gt;First Name&lt;/th&gt;&lt;th&gt;Last Name&lt;/th&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Jane&lt;/td&gt;&lt;td&gt;Richards&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Joe&lt;/td&gt;&lt;td&gt;Smith&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Jack&lt;/td&gt;&lt;td&gt;Jones&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Joanne&lt;/td&gt;&lt;td&gt;Taylor&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Jimmy&lt;/td&gt;&lt;td&gt;Brown&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;Jenny&lt;/td&gt;&lt;td&gt;Wilson&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt;  &lt;th&gt;First Name&lt;/th&gt;  &lt;th&gt;Last Name&lt;/th&gt;  &lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;1&lt;/td&gt; &lt;td&gt;Jane&lt;/td&gt; &lt;td&gt;Richards&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;2&lt;/td&gt; &lt;td&gt;Joe&lt;/td&gt; &lt;td&gt;Smith&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;3&lt;/td&gt; &lt;td&gt;Jack&lt;/td&gt; &lt;td&gt;Jones&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;4&lt;/td&gt; &lt;td&gt;Joanne&lt;/td&gt; &lt;td&gt;Taylor&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;5&lt;/td&gt; &lt;td&gt;Jimmy&lt;/td&gt; &lt;td&gt;Brown&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;6&lt;/td&gt; &lt;td&gt;Jenny&lt;/td&gt; &lt;td&gt;Wilson&lt;/td&gt;&lt;/tr&gt;<br/>
 		&lt;/table&gt;    
     </p>
     <h6>Older Browsers</h6>
@@ -381,13 +392,13 @@
     
     <p class="code">
     	&lt;table class="mooi-table"&gt;<br/>
-            &lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt;&lt;th&gt;First Name&lt;/th&gt;&lt;th&gt;Last Name&lt;/th&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Jane&lt;/td&gt;&lt;td&gt;Richards&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr class="mooi-table-odd"&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Joe&lt;/td&gt;&lt;td&gt;Smith&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Jack&lt;/td&gt;&lt;td&gt;Jones&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr class="mooi-table-odd"&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Joanne&lt;/td&gt;&lt;td&gt;Taylor&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Jimmy&lt;/td&gt;&lt;td&gt;Brown&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr class="mooi-table-odd"&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;Jenny&lt;/td&gt;&lt;td&gt;Wilson&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt; &lt;th&gt;First Name&lt;/th&gt; &lt;th&gt;Last Name&lt;/th&gt; &lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;1&lt;/td&gt; &lt;td&gt;Jane&lt;/td&gt; &lt;td&gt;Richards&lt;/td&gt; &lt;/tr&gt;<br/>
+            &lt;tr class="mooi-table-odd"&gt;&lt;td&gt;2&lt;/td&gt; &lt;td&gt;Joe&lt;/td&gt; &lt;td&gt;Smith&lt;/td&gt; &lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;3&lt;/td&gt; &lt;td&gt;Jack&lt;/td&gt; &lt;td&gt;Jones&lt;/td&gt; &lt;/tr&gt;<br/>
+            &lt;tr class="mooi-table-odd"&gt;&lt;td&gt;4&lt;/td&gt; &lt;td&gt;Joanne&lt;/td&gt; &lt;td&gt;Taylor&lt;/td&gt; &lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td&gt;5&lt;/td&gt; &lt;td&gt;Jimmy&lt;/td&gt; &lt;td&gt;Brown&lt;/td&gt; &lt;/tr&gt;<br/>
+            &lt;tr class="mooi-table-odd"&gt;&lt;td&gt;6&lt;/td&gt; &lt;td&gt;Jenny&lt;/td&gt; &lt;td&gt;Wilson&lt;/td&gt; &lt;/tr&gt;<br/>
 		&lt;/table&gt;
 	</p>
     
@@ -409,13 +420,13 @@
     
     <p class="code">
     	&lt;table class="mooi-table mooi-responsive-table"&gt;<br/>
-            &lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt;&lt;th&gt;First Name&lt;/th&gt;&lt;th&gt;Last Name&lt;/th&gt;&lt;th&gt;Department&lt;/th&gt;&lt;th&gt;Start Year&lt;/th&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td data-value="User ID"&gt;1&lt;/td&gt;&lt;td data-value="First Name"&gt;Jane&lt;/td&gt;&lt;td data-value="Last Name"&gt;Richards&lt;/td&gt;&lt;td data-value="Department"&gt;Sales&lt;/td&gt;&lt;td data-value="Start Year"&gt;2005&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td data-value="User ID"&gt;2&lt;/td&gt;&lt;td data-value="First Name"&gt;Joe&lt;/td&gt;&lt;td data-value="Last Name"&gt;Smith&lt;/td&gt;&lt;td data-value="Department"&gt;Accounts&lt;/td&gt;&lt;td data-value="Start Year"&gt;2007&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td data-value="User ID"&gt;3&lt;/td&gt;&lt;td data-value="First Name"&gt;Jack&lt;/td&gt;&lt;td data-value="Last Name"&gt;Jones&lt;/td&gt;&lt;td data-value="Department"&gt;Shipping&lt;/td&gt;&lt;td data-value="Start Year"&gt;2010&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td data-value="User ID"&gt;4&lt;/td&gt;&lt;td data-value="First Name"&gt;Joanne&lt;/td&gt;&lt;td data-value="Last Name"&gt;Taylor&lt;/td&gt;&lt;td data-value="Department"&gt;Administration&lt;/td&gt;&lt;td data-value="Start Year"&gt;2008&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td data-value="User ID"&gt;5&lt;/td&gt;&lt;td data-value="First Name"&gt;Jimmy&lt;/td&gt;&lt;td data-value="Last Name"&gt;Brown&lt;/td&gt;&lt;td data-value="Department"&gt;Sales&lt;/td&gt;&lt;td data-value="Start Year"&gt;2003&lt;/td&gt;&lt;/tr&gt;<br/>
-            &lt;tr&gt;&lt;td data-value="User ID"&gt;6&lt;/td&gt;&lt;td data-value="First Name"&gt;Jenny&lt;/td&gt;&lt;td data-value="Last Name"&gt;Wilson&lt;/td&gt;&lt;td data-value="Department"&gt;IT&lt;/td&gt;&lt;td data-value="Start Year"&gt;2011&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;th&gt;User ID&lt;/th&gt; &lt;th&gt;First Name&lt;/th&gt; &lt;th&gt;Last Name&lt;/th&gt; &lt;th&gt;Department&lt;/th&gt; &lt;th&gt;Start Year&lt;/th&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td data-value="User ID"&gt;1&lt;/td&gt; &lt;td data-value="First Name"&gt;Jane&lt;/td&gt; &lt;td data-value="Last Name"&gt;Richards&lt;/td&gt; &lt;td data-value="Department "&gt;Sales&lt;/td&gt; &lt;td data-value="Start Year"&gt;2005&lt;/td&gt; &lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td data-value="User ID"&gt;2&lt;/td&gt; &lt;td data-value="First Name"&gt;Joe&lt;/td&gt; &lt;td data-value="Last Name"&gt;Smith&lt;/td&gt; &lt;td data-value="Department "&gt;Accounts&lt;/td&gt; &lt;td data-value="Start Year"&gt;2007&lt;/td&gt; &lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td data-value="User ID"&gt;3&lt;/td&gt;&lt;td data-value="First Name"&gt;Jack&lt;/td&gt;&lt;td data-value="Last Name"&gt;Jones&lt;/td&gt;&lt;td data-value="Department "&gt;Shipping&lt;/td&gt;&lt;td data-value="Start Year"&gt;2010&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td data-value="User ID"&gt;4&lt;/td&gt;&lt;td data-value="First Name"&gt;Joanne&lt;/td&gt;&lt;td data-value="Last Name"&gt;Taylor&lt;/td&gt;&lt;td data-value="Department "&gt;Administration&lt;/td&gt;&lt;td data-value="Start Year"&gt;2008&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td data-value="User ID"&gt;5&lt;/td&gt;&lt;td data-value="First Name"&gt;Jimmy&lt;/td&gt;&lt;td data-value="Last Name"&gt;Brown&lt;/td&gt;&lt;td data-value="Department "&gt;Sales&lt;/td&gt;&lt;td data-value="Start Year"&gt;2003&lt;/td&gt;&lt;/tr&gt;<br/>
+            &lt;tr&gt;&lt;td data-value="User ID"&gt;6&lt;/td&gt;&lt;td data-value="First Name"&gt;Jenny&lt;/td&gt;&lt;td data-value="Last Name"&gt;Wilson&lt;/td&gt;&lt;td data-value="Department "&gt;IT&lt;/td&gt;&lt;td data-value="Start Year"&gt;2011&lt;/td&gt;&lt;/tr&gt;<br/>
 		&lt;/table&gt;        
     </p>
     
