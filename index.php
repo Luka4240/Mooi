@@ -252,34 +252,133 @@
 	<div class="sixteen columns">
     	<h2>Forms</h2>
         
-        <p></p>
-        <form class="mooi-form">
-        <h6>Regular Input</h6>
-        <input type="text" />
-        
-    	<h6>Regular Textarea</h6>
-    	<textarea></textarea>
-        
-        <h6>Select List</h6>
-        <select>
-        	<option value="Option 1">Option 1</option>
-            <option value="Option 2">Option 2</option>
-            <option value="Option 3">Option 3</option>
-		</select> <br/>
-        
-        <h6>Regular Checkbox</h6>
-		<input type="checkbox" id="checkbox-1-1" class="mooi-form-checkbox" /><label class=".mooi-form-inline-label" for="checkbox-1-1"></label>
-		<input type="checkbox" id="checkbox-1-2" class="mooi-form-checkbox" /><label class=".mooi-form-inline-label" for="checkbox-1-2"></label>
-		<input type="checkbox" id="checkbox-1-3" class="mooi-form-checkbox" /><label class=".mooi-form-inline-label" for="checkbox-1-3"></label>
-		<input type="checkbox" id="checkbox-1-4" class="mooi-form-checkbox" /><label class=".mooi-form-inline-label" for="checkbox-1-4"></label>
-        <h6>Regular Radio Button</h6>
-        <input name="radio" class="mooi-form-radio" id="radio-1" type="radio" value="Yes" /><label class=".mooi-form-inline-label" for="radio-1"></label>
-        <input name="radio" class="mooi-form-radio" id="radio-2" type="radio" value="No" /><label class=".mooi-form-inline-label" for="radio-2"></label>
-        
-        
-        <h6>Regular Button</h6>
-        <input type="button" class="mooi-button mooi-button-primary" value="Submit" />
+        <p>Mooi comes with some prestyled forms that you can use in your designs, they are easy to work with and you can get up and running straight away.</p>
+        <p>To use the Mooi Forms, the first thing you need to do is give your <code>&lt;form&gt;</code> a class of <code>mooi-form</code>, then you will need to set certain variables in the _vars.scss file.</p>
+        <div>
+        <h6>Simple Inline Form</h6>
+        <p>If you just want a simple inline form like the one below all you have to do is add a second class to your <code>&lt;form&gt;</code> of <code>mooi-form-inline</code>.
+        <form class="mooi-form mooi-form-inline">
+        <input type="text" placeholder="User Name" />
+       	<input type="password" placeholder="Password" />
+        <label><input type="checkbox"> Remember Me</label>
+        <input type="button" class="mooi-button mooi-button-primary" value="Login" />
         </form>
+        
+        <p class="code">
+        &lt;form class="mooi-form mooi-form-inline"&gt;<br />
+        &lt;input type="text" placeholder="User Name" /&gt;<br />
+       	&lt;input type="password" placeholder="Password" /&gt;<br />
+        &lt;label&gt;&lt;input type="checkbox"&gt; Remember Me&lt;/label&gt;<br />
+        &lt;input type="button" class="mooi-button mooi-button-primary" value="Login" /&gt;<br />
+        &lt;/form&gt;
+        </p>
+        
+        
+        </div>
+        
+        <div>
+        <h6>Column Form</h6>
+        <p>If you just want a form with everything stacked on top of each other like the one below all you have to do is add a second class to your <code>&lt;form&gt;</code> of <code>mooi-form-column</code>.
+        <form class="mooi-form mooi-form-column">
+        <label>User Name</label>
+        <input type="text" placeholder="User Name" />
+        <label>Password</label>
+       	<input type="password" placeholder="Password" />
+        <label><input type="checkbox"> Remember Me</label>
+        <input type="button" class="mooi-button mooi-button-primary" value="Login" />
+        </form>    
+        
+        <p class="code">
+        &lt;form class="mooi-form mooi-form-column"&gt;<br />
+        &lt;input type="text" placeholder="User Name" /&gt;<br />
+       	&lt;input type="password" placeholder="Password" /&gt;<br />
+        &lt;label&gt;&lt;input type="checkbox"&gt; Remember Me&lt;/label&gt;<br />
+        &lt;input type="button" class="mooi-button mooi-button-primary" value="Login" /&gt;<br />
+        &lt;/form&gt;
+        </p>
+        
+        </div>
+        
+        
+        
+        
+        <div>
+        
+        <h6>Aligned Form</h6>
+        <p>If you are after a form where the label is aligned with the input like the one below then you will need to add a second class to your <code>&lt;form&gt;</code> of <code>mooi-form-aligned</code>.
+        <form class="mooi-form mooi-form-aligned">
+        <div>
+        <label>First Name</label>
+        <input type="text" placeholder="First Name" />
+        </div>
+        <div>
+        <label>Last Name</label>
+        <input type="text" placeholder="Last Name" />
+        </div>
+        <div>
+        <label>Email</label>
+        <input type="text" placeholder="Email" />
+        </div>
+        <div>
+        <label>Confirm Email</label>
+        <input type="text" placeholder="Confirm Email" />
+        </div>
+        <div>
+        <label>Password</label>
+       	<input type="password" placeholder="Password" />
+        </div>
+        <div>
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" />
+        </div>
+        <div class="mooi-form-aligned-right">
+        <label class="mooi-form-aligned-checkbox"><input type="checkbox"> I agree to the Terms</label>
+        </div>
+        <div class="mooi-form-aligned-right">
+        <input type="button" class="mooi-button mooi-button-primary" value="Login" />
+        </div>
+        </form>
+        
+        
+        <p class="code">
+        
+        &lt;form class="mooi-form mooi-form-aligned"&gt;<br />
+        &lt;div&gt;<br />
+        &lt;label&gt;First Name&lt;/label&gt;<br />
+        &lt;input type="text" placeholder="First Name" /&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div&gt;<br />
+        &lt;label&gt;Last Name&lt;/label&gt;<br />
+        &lt;input type="text" placeholder="Last Name" /&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div&gt;<br />
+        &lt;label&gt;Email&lt;/label&gt;<br />
+        &lt;input type="text" placeholder="Email" /&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div&gt;<br />
+        &lt;label&gt;Confirm Email&lt;/label&gt;<br />
+        &lt;input type="text" placeholder="Confirm Email" /&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div&gt;<br />
+        &lt;label&gt;Password&lt;/label&gt;<br />
+       	&lt;input type="password" placeholder="Password" /&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div&gt;<br />
+        &lt;label&gt;Confirm Password&lt;/label&gt;<br />
+        &lt;input type="password" placeholder="Confirm Password" /&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class="mooi-form-aligned-right"&gt;<br />
+        &lt;label class="mooi-form-aligned-checkbox"&gt;&lt;input type="checkbox"&gt; I agree to the Terms&lt;/label&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class="mooi-form-aligned-right"&gt;<br />
+        &lt;input type="button" class="mooi-button mooi-button-primary" value="Login" /&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;/form&gt;<br />
+        
+        </p>
+            
+        </div>
+        
     </div>
 </div>
 

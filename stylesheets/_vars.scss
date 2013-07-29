@@ -36,10 +36,22 @@ $linkActive: #c814FA;
 	  Form Settings 
    =================== */
 
-$form-width: 0;
-$input-width: 250px;
-$label-width: 0;
+$inlineFormWidth: 0;
+$inlineInputWidth: 160px;
+$inlineLabelWidth: 160px;
 
+$columnFormWidth: 0;
+$columnInputWidth: 160px;
+$columnLabelWidth: 160px;
+
+$alignedFormWidth: 0;
+$alignedInputWidth: 160px;
+$alignedLabelWidth: 130px;
+$alignedCheckboxWidth: 160px;
+
+$multicolFormWidth: 0;
+$multicolInputWidth: 160px;
+$multicolLabelWidth: 160px;
 
 /* ===================
 	Button Settings 
