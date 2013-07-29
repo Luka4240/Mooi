@@ -248,13 +248,31 @@
     </div>
 </div>    
 
+<div class="row section">
+	<div class="sixteen columns">
+    	<h2>Menus</h2>
+        <p>In Mooi there are some basic styles set for menus and navigation, they are easy to use and implement.</p>
+        <nav class="mooi-menu">
+        <ul>
+        	<li><a href="#">Home</a></li>
+            <li><a href="#">Our Work</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    	</nav>
+    </div>
+
+</div>
+
+
 <div class="row  section">
 	<div class="sixteen columns">
     	<h2>Forms</h2>
         
         <p>Mooi comes with some prestyled forms that you can use in your designs, they are easy to work with and you can get up and running straight away.</p>
         <p>To use the Mooi Forms, the first thing you need to do is give your <code>&lt;form&gt;</code> a class of <code>mooi-form</code>, then you will need to set certain variables in the _vars.scss file.</p>
-        <div>
+        
         <h6>Simple Inline Form</h6>
         <p>If you just want a simple inline form like the one below all you have to do is add a second class to your <code>&lt;form&gt;</code> of <code>mooi-form-inline</code>.
         <form class="mooi-form mooi-form-inline">
@@ -274,9 +292,7 @@
         </p>
         
         
-        </div>
-        
-        <div>
+       
         <h6>Column Form</h6>
         <p>If you just want a form with everything stacked on top of each other like the one below all you have to do is add a second class to your <code>&lt;form&gt;</code> of <code>mooi-form-column</code>.
         <form class="mooi-form mooi-form-column">
@@ -297,12 +313,12 @@
         &lt;/form&gt;
         </p>
         
-        </div>
+       
         
         
         
         
-        <div>
+        
         
         <h6>Aligned Form</h6>
         <p>If you are after a form where the label is aligned with the input like the one below then you will need to add a second class to your <code>&lt;form&gt;</code> of <code>mooi-form-aligned</code>.
@@ -377,7 +393,7 @@
         
         </p>
             
-        </div>
+       
         
     </div>
 </div>

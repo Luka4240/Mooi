@@ -95,23 +95,9 @@
 
 
 
-// /* REM Calculation */
+// /*  Rem Calculator */
+// /* -----------------	This mixin was found at this address -->  http://paulwp.com/useful-sass-mixins-for-working-with-rem-units/ */
 
-@function calculateRem($size) {
-	$remSize: $size / $default-fontSize; // /*$default-fontSize = 16px */
-	@return #{$remSize}rem;
-}
-
-@mixin fontSize($size) {
-	font-size: $size; //Fallback in px
-	font-size: calculateRem($size);
-}
-
-// /* Example --> .element {@include fontSize(32px); } */
-
-// /* ============================================================================================== */
-
-// /* Secondary Rem Calculator */
 
 @mixin rem($property, $px-values) {
   // Convert the baseline into rems
