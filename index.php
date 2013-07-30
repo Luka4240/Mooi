@@ -16,6 +16,9 @@
  <!--[if lte IE 8]>
 <script src="http://www.lukehoward.me.uk/mooi/jquery/respond.js"></script>
 <![endif]-->
+
+<script type="text/javascript" src="jquery/navigation.js"> </script>
+
 </head>
 
 <body>
@@ -252,15 +255,46 @@
 	<div class="sixteen columns">
     	<h2>Menus</h2>
         <p>In Mooi there are some basic styles set for menus and navigation, they are easy to use and implement.</p>
-        <nav class="mooi-menu">
-        <ul>
-        	<li><a href="#">Home</a></li>
-            <li><a href="#">Our Work</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    	</nav>
+       	
+        	<h5>Horizontal Menu</h5>
+            <ul class="mooi-menu-horizontal">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+            <h5>Vertical Menu</h5>
+            <ul class="mooi-menu-vertical mooi-responsive-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+            <h5>Blocked Menu</h5>
+            <ul class="mooi-menu-blocked mooi-responsive-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+            <h5>Responsive Menu</h5>
+            <div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+        
+            
+	
     </div>
 
 </div>

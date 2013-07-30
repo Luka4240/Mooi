@@ -2,11 +2,7 @@
 	  Variables for the Mooi Framework 
    ===================================== */
 
-
-
 $max-page-width: 1280px; // /* Sets the maximum width for the web page */
-
-
 
 /* ===================
    Typography Settings 
@@ -31,6 +27,15 @@ $linkColor: #333 ;
 $linkVisited: #666;
 $linkHover: #00F ;
 $linkActive: #c814FA;
+
+/* ===================
+	Menu Settings
+   =================== */
+   
+$menuBackgroundColor:#dddddd;
+  
+$blockedMenuWidth: 300px;
+$blockedMenuBorderColor: #dddddd;
 
 /* ===================
 	  Form Settings 

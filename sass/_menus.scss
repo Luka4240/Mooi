@@ -30,34 +30,113 @@
 	
 }
 
+// /* Mooi Menus */
 
-.mooi-menu ul li {
+.mooi-menu-horizontal li {
 	display:inline-block;
 	@include rem('padding',5px);
 	@include rem('margin',1px);
 }
-.mooi-menu ul li a {
+.mooi-menu-horizontal li a {
 	@include rem('padding',7px 20px 7px 20px);	
 	@include border-radius(4px);
 }
-.mooi-menu ul li a:link {
+.mooi-menu-horizontal li a:link {
 	color:#888;
 	text-decoration:none;
 }
-.mooi-menu ul li a:active{
+.mooi-menu-horizontal li a:active{
 	color:#111;
 	text-decoration:none;
 }
-.mooi-menu ul li a:hover {
+.mooi-menu-horizontal li a:hover {
 	color:#222;
-	background-color:#eee;
+	background-color:$menuBackgroundColor;
 	
 }
-.mooi-menu ul li a:focus {
+.mooi-menu-horizontal li a:focus {
 	color:#222;
 }
 
-.mooi-menu ul li:focus {
+.mooi-menu-horizontal li:focus {
 	background-color:#ccc;
 }
 
+
+// /* Vertical Menu */
+
+.mooi-menu-vertical li {
+	display:block;
+	@include rem('padding',5px);
+	@include rem('margin',1px);
+}
+.mooi-menu-vertical li a {
+	@include rem('padding',7px 20px 7px 20px);	
+	@include border-radius(4px);
+}
+.mooi-menu-vertical li a:link {
+	color:#888;
+	text-decoration:none;
+}
+.mooi-menu-vertical li a:active{
+	color:#111;
+	text-decoration:none;
+}
+
+.mooi-menu-vertical li a:hover {
+	color:#222;
+	background-color:$menuBackgroundColor;
+	
+}
+.mooi-menu-vertical li a:focus {
+	color:#222;
+}
+
+.mooi-menu-vertical li:focus {
+	background-color:#ccc;
+}
+
+
+/* Blocked Menu */
+
+ul.mooi-menu-blocked {
+	border-top:1px solid $blockedMenuBorderColor;
+	border-left:1px solid $blockedMenuBorderColor;
+	border-right:1px solid $blockedMenuBorderColor;
+	width:$blockedMenuWidth;
+	@include border-radius(4px);
+}
+
+.mooi-menu-blocked li {
+	display:block;
+	text-indent:5px;
+	@include rem('padding',5px);
+	border-bottom:1px solid $blockedMenuBorderColor;
+}
+.mooi-menu-blocked li a {
+	@include rem('padding',7px 20px 7px 20px);
+		
+	
+}
+.mooi-menu-blocked li a:link {
+	color:#888;
+	text-decoration:none;
+}
+.mooi-menu-blocked li a:active{
+	color:#111;
+	text-decoration:none;
+}
+.mooi-menu-blocked li a:hover {
+	color:#222;
+	
+}
+.mooi-menu-blocked li:hover {background-color:$menuBackgroundColor;}
+.mooi-menu-blocked li:focus {
+	color:#222;
+}
+
+.mooi-menu-blocked li:focus {
+	background-color:#ccc;
+}
+
+/* Responsive Menu */
