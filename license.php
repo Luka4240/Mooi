@@ -39,32 +39,25 @@
     </div>
 </header>    
 
-<div class="row">
+<div class="row section">
 	<div class="sixteen columns">
-    	<p class="big-intro">A Beautifully Clean and Simple SCSS Framework</p>
-	</div>        
+    <h2>The License</h2>
+    	
+        <p>Every part of Mooi is free to use, and if you want to tear it apart, change it, or just use it as it was designed feel free. The full license for Mooi is just below, and can be found here as well <a href="http://opensource.org/licenses/mit-license.php">http://opensource.org/licenses/mit-license.php</a>.
+    
+		<h5>The MIT License (MIT)</h5>
+
+		<h5>Copyright &copy; 2013 Luke Howard.</h5>
+
+		<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+		<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+		<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+        
+	</div>
 </div>
 
-<div class="row  section">
-	<div class="sixteen columns">
-    <div class="centered">
-    	<form action="http://github.com/Luka4240/Mooi/archive/master.zip">
-        	<button class="mooi-button mooi-button-xlarge" type="submit">Download Mooi</button>
-        </form>
-        <form action="http://github.com/Luka4240/Mooi">
-        	<button class="mooi-button mooi-button-primary mooi-button-xlarge" type="submit">View on GitHub</button>
-        </form>
-        
-    	
-    </div>
-    	<p class="intro">Mooi is a SCSS Framework designed to speed up development times, with Mooi you can wireframe a site in a matter of minutes by setting a few variables and then adding your own CSS to the StyleSheets.</p>
-        <p class="intro">Mooi has been designed, developed and created with users in mind, the concept is that nothing should be overly complicated and that by using this framework it will reduce the lines of code that you have to write, and let Mooi do the rest for you.</p>
-    </div>
-    
-   
-    
-</div>
-   
 <footer class="row">
     <div class="one-third column">
     	<p>&copy; Copyright 2013. Luke Howard. All Rights Reserved.</p>

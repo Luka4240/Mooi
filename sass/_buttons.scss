@@ -1,6 +1,6 @@
 // /* ---- Buttons for Mooi ---- */
 
-.mooi-button, .mooi-button:visited, a.mooi-button, a.mooi-button:visited {
+.mooi-button, .mooi-button:visited, a.mooi-button, a.mooi-button:visited, .mooi-button a:link, .mooi-button a:visited, ,mooi-button a {
 	font-size: $default-fontSize;
 	*font-size:90%; /* IE fix */
 	*overflow: visible; /*IE Fix */
@@ -46,10 +46,6 @@ a.mooi-button:hover, a.mooi-button:focus, .mooi-button:hover, .mooi-button:focus
     opacity: 0.40;
     cursor: not-allowed;
     box-shadow: none;
-}
-
-.mooi-button-hidden {
-    display: none;
 }
 
 /* Firefox: Get rid of the inner focus border */
@@ -99,13 +95,17 @@ a.mooi-button-red:focus, a.mooi-button-orange:focus, a.mooi-button-green:focus, 
 
 .mooi-button-xsmall, a.mooi-button-xsmall {
 	font-size:0.7rem;
+	line-height:0.85rem
 }
 .mooi-button-small, a.mooi-button-small {
 	font-size: 0.85rem;
+	line-height:1rem
 }
 .mooi-button-large, a.mooi-button-large {
 	font-size: 1.1rem;
+	line-height:1.3rem
 }
 .mooi-button-xlarge, a.mooi-button-xlarge {
 	font-size: 1.25rem;
+	line-height:1.4rem
 }
