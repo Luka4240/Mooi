@@ -62,6 +62,22 @@
             &lt;/div&gt;
         
         </p>
+        
+        <p class="code">
+			&lt;div class="row"&gt;<br/>
+            &lt;div class="eight columns"&gt;<br/>
+            &lt;p&gt;This is eight columns wide.&lt;/p&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="four columns"&gt;<br/>
+            &lt;p&gt;This is four columns wide.&lt;/p&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="four columns"&gt;<br/>
+            &lt;p&gt;This is four columns wide.&lt;/p&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;/div&gt;
+        
+        </p>
+        
     </div>
     
   <div class="one columns example-col">One</div>
@@ -110,6 +126,18 @@
     <div class="one columns example-col">One</div>
     
   <div class="sixteen columns example-col">Sixteen</div>
+    
+    <p class="code">
+			&lt;div class="row"&gt;<br/>
+            &lt;div class="one-third column"&gt;<br/>
+            &lt;p&gt;This is one third of the page's width.&lt;/p&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="two-thirds column"&gt;<br/>
+            &lt;p&gt;This is two thirds of the page's width.&lt;/p&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;/div&gt;
+        
+        </p>
     
     <div class="one-third column example-col">One Third</div>
     <div class="one-third column example-col">One Third</div>
