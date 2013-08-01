@@ -3,21 +3,15 @@
 <head>
 <meta charset="utf-8">
 <title>Mooi | A Beautifully Clean and Simple SCSS Framework</title>
-<!-- css3-mediaqueries.js for IE less than 9 -->
+<!-- HTML5Shiv and Respond.js -->
  <!--[if lte IE 8]>
 <script src="http://www.lukehoward.me.uk/mooi/jquery/html5shiv.js"></script>
-
+<script src="http://www.lukehoward.me.uk/mooi/jquery/respond.js"></script>
 <![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/lukehoward.me.uk/35410.css" type="text/css" />
 <link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/www.lukehoward.me.uk/35410.css" type="text/css" />
 <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
-<!-- css3-mediaqueries.js for IE less than 9 -->
- <!--[if lte IE 8]>
-<script src="http://www.lukehoward.me.uk/mooi/jquery/respond.js"></script>
-<![endif]-->
-
-<script type="text/javascript" src="jquery/navigation.js"> </script>
 
 </head>
 
@@ -41,19 +35,47 @@
 <div class="row section">
 	<div class="sixteen columns">
 <h2>Documentation</h2>
-
+        <p>To use Mooi there are a few things you need to make sure you put a few things in to any webpage that you create.</p>
+        
+        <p>The first thing you need to include is the <code>&lt;meta name="viewport"&gt;</code>, the full example is below, this is used to ensure that the web page responds correctly to the browsers size.</p>
+        
+        <p class="code">
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"&gt;
+        </p>
+        
+        <p>The next thing we need to include is the HTML5 Shiv and Respond, this is to make sure that HTML5 tags such as <code>&lt;header&gt;</code> work correctly in browsers that are no HTML5 compatible and so that Media Queries work in the older browsers such as Internet Explorer 8. The working example for this is below, all you need to do is make sure that this points to the html5shiv.js and respond.js on your website.</p>
+          
+        <p class="code">
+            &lt;!-- HTML5Shiv.js &amp; Respond.js --&gt;<br />
+            &lt;!--[if lte IE 8]&gt;<br />
+                &lt;script type="text/javscript" src="jquery/html5shiv.js"&gt;&lt;/script&gt;<br />
+                &lt;script type="text/javscript" src="jquery/respond.js"&gt;&lt;/script&gt;<br />
+            &lt;![endif]--&gt;
+        </p>            
+        <p>The last thing we need to include is the style sheet, an example of this is below.</p>
+        
+        <p class="code">
+            &lt;link href="stylesheets/style.css" rel="stylesheet" type="text/css"&gt;
+        </p>
+        <p>Once you have included those 3 items in your html/php document you are ready to get working with all of the great features that Mooi has to offer. It is recomended that you take a look at the '_vars.scss' file found in the 'stylesheets' folder, in this file you will find variables that can be changed to tweak the look and styles within Mooi.</p>
 	</div>
 </div>
 
-
+    
 <div class="row  section">
 	<div class="sixteen columns">
     	<h3>The Layout</h3>
-		<p>The Layout is based on Skeleton, but uses a fluid design with break points to ensure a responsive design, so that no matter what device views a site using Mooi, it looks great each and every time.</p>
+		<p>The Layout is based on Skeleton by Dave Gamache, but has been changed to work on percentages, but to still take advantage of break points to ensure a truly fluid and responsive design.</p>
+        
+        
     </div>
-    
+        
     <div class="sixteen columns">
-    
+        
+        <p>The first thing you need to do when using the Mooi Layout is to set the maximum page width you want in the _vars.scss file, then once you are setup with an index.html file you can get started and create a <code>div</code> inside the <code>body tags</code> with a class of <code>row</code>. This acts as a container, once you have done this inside that you then create your column layout, be it that you want four columns all of different width or you just want a full width column. So for example within the <code>&lt;div class="row"&gt;</code>create a new <code>div</code> with a class of <code>sixteen  columns</code> this will create a full width column for you to drop your content into.</p>
+        
+        <p>So to cover what we have just done.</p>
+        
         <p class="code">
 			&lt;div class="row"&gt;<br/>
             &lt;div class="sixteen columns"&gt;<br/>
@@ -127,6 +149,7 @@
     
   <div class="sixteen columns example-col">Sixteen</div>
     
+    <div class="sixteen columns">
     <p class="code">
 			&lt;div class="row"&gt;<br/>
             &lt;div class="one-third column"&gt;<br/>
@@ -138,7 +161,7 @@
             &lt;/div&gt;
         
         </p>
-    
+    </div>
     <div class="one-third column example-col">One Third</div>
     <div class="one-third column example-col">One Third</div>
     <div class="one-third column example-col">One Third</div>
@@ -303,7 +326,7 @@
                 <li><a href="#">Contact</a></li>
             </ul>
             
-            <h5>Responsive Menu</h5>
+            <!-- <h5>Responsive Menu</h5>
             <div>
               <ul>
                 <li><a href="#">Home</a></li>
@@ -311,7 +334,7 @@
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Blog</a></li>
               </ul>
-            </div>
+            </div>  -->
         
             
 	
