@@ -1,79 +1,57 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<!-- ======== Basic Page Needs ========= -->    
 <meta charset="utf-8">
 <title>Mooi | A Beautifully Clean and Simple SCSS Framework</title>
-<!-- css3-mediaqueries.js for IE less than 9 -->
- <!--[if lte IE 8]>
-<script src="http://www.lukehoward.me.uk/mooi/jquery/html5shiv.js"></script>
 
-<![endif]-->
+<!-- ======== Responsive Page Needs ========= -->    
+    
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/lukehoward.me.uk/35410.css" type="text/css" />
-<link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/www.lukehoward.me.uk/35410.css" type="text/css" />
-<link href="stylesheets/style.css" rel="stylesheet" type="text/css">
-<!-- css3-mediaqueries.js for IE less than 9 -->
- <!--[if lte IE 8]>
-<script src="http://www.lukehoward.me.uk/mooi/jquery/respond.js"></script>
+
+<!-- ======== Mooi Layout, and Responsive Needs ========= -->
+    
+<!-- HTML5Shiv.js & Respond.js -->
+<!--[if lte IE 8]>
+<script type="text/javscript" src="jquery/html5shiv.js"></script>
+<script type="text/javscript" src="jquery/respond.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="jquery/navigation.js"> </script>
+<!-- ======== CSS StyleSheets ========= -->    
+    
+<link href="stylesheets/style.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
 
-<!-- Page Header -->
+<!-- ======== Mooi Layout, Delete everything below and create your own site! :-) ========= -->
 
 <header class="row">
-	<div class="sixteen columns mooi-header">
-    <img class="logo" src="images/mooi_logo_sml.png" width="168" height="60" alt="Mooi">
-	<nav class="mooi-menu-right add-top-space">
-    	<ul>
-        	<li><a href="http://www.lukehoward.me.uk/mooi/">Home</a></li>
-            <li><a href="http://www.lukehoward.me.uk/mooi/documentation.php">Documentation</a></li>
-            <li><a href="http://www.lukehoward.me.uk/mooi/license.php">License</a></li>
-            <li><a href="http://www.lukehoward.me.uk/mooi/contact.php">Contact</a></li>
-		</ul>
-	</nav>        	          
-    </div>
-</header>    
+    <div class="sixteen columns">
+        <h2>Mooi Framework</h2>
+    </div>    
+    
+</header>
 
 <div class="row">
-	<div class="sixteen columns">
-    	<p class="big-intro">A Beautifully Clean and Simple SCSS Framework</p>
-	</div>        
-</div>
-
-<div class="row  section">
-	<div class="sixteen columns">
-    <div class="centered">
-    	<form action="http://github.com/Luka4240/Mooi/archive/master.zip">
-        	<button class="mooi-button mooi-button-xlarge" type="submit">Download Mooi</button>
-        </form>
-        <form action="http://github.com/Luka4240/Mooi">
-        	<button class="mooi-button mooi-button-primary mooi-button-xlarge" type="submit">View on GitHub</button>
-        </form>
+    
+    <div class="one-third column">
+        <p class="intro">Mooi is a SCSS Framework designed to speed up development times, with Mooi you can wireframe a site in a matter of minutes by setting a few variables and then adding your own CSS to the StyleSheets.</p>
+    </div>
         
-    	
-    </div>
-    	<p class="intro">Mooi is a SCSS Framework designed to speed up development times, with Mooi you can wireframe a site in a matter of minutes by setting a few variables and then adding your own CSS to the StyleSheets.</p>
-        <p class="intro">Mooi has been designed, developed and created with users in mind, the concept is that nothing should be overly complicated and that by using this framework it will reduce the lines of code that you have to write, and let Mooi do the rest for you.</p>
+    <div class="two-thirds column">
+    
+    <p class="intro">Mooi has been designed, developed and created with users in mind, the concept is that nothing should be overly complicated and that by using this framework it will reduce the lines of code that you have to write, and let Mooi do the rest for you.</p>
+    
     </div>
     
-   
     
-</div>
-   
+</div>    
+    
 <footer class="row">
-    <div class="one-third column">
+    <div class="sixteen columns">
     	<p>&copy; Copyright 2013. Luke Howard. All Rights Reserved.</p>
-    </div>
-    <div class="one-third column">
-    
-    </div>
-    <div class="one-third column">
-    
     </div>
 </footer>
 

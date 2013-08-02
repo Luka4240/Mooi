@@ -186,3 +186,45 @@
 	width:$alignedCheckboxWidth!important;
 	text-align:left;
 }
+
+ @media only screen and (max-width: 480px) {
+    
+.mooi-form-aligned { @if $inlineFormWidth == 0 { width:100%; } @else {width:$inlineFormWidth;} }
+.mooi-form-aligned label{
+	display:inline-block;
+    text-align:left;                        
+}
+.mooi-form-aligned input[type="text"],
+.mooi-form-aligned input[type="password"],
+.mooi-form-aligned input[type="email"],
+.mooi-form-aligned input[type="url"],
+.mooi-form-aligned input[type="date"],
+.mooi-form-aligned input[type="month"],
+.mooi-form-aligned input[type="time"],
+.mooi-form-aligned input[type="datetime"],
+.mooi-form-aligned input[type="datetime-local"],
+.mooi-form-aligned input[type="week"],
+.mooi-form-aligned input[type="number"],
+.mooi-form-aligned input[type="search"],
+.mooi-form-aligned input[type="tel"],
+.mooi-form-aligned input[type="color"],
+.mooi-form-aligned select,
+.mooi-form-aligned textarea {
+    display: block;
+ 	@if $inlineInputWidth == 0 {
+		width:100%;
+	}
+	@else {width:$inlineInputWidth;}
+}
+
+.mooi-form-aligned input[type="checkbox"],
+.mooi-form-aligned input[type="radio"] {
+	display:inline-block;
+	@include rem('padding',2px);
+	
+}
+.mooi-form-aligned button {	@include rem('margin',0 0 0 10px); }                
+.mooi-form-aligned-right {
+	margin-left:0;
+}                    
+}
